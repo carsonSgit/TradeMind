@@ -16,7 +16,7 @@ jobs:
         run: sudo apt-get install -y pandoc
       
       - name: Convert Markdown to HTML
-        run: pandoc README.md -o design_doc.html --standalone --metadata title="TradeMind" -c design_doc.css
+        run: pandoc README.md -o design_doc/design_doc.html --standalone --metadata title="TradeMind" -c design_doc.css
       
       - name: Commit and push if design_doc.html changed
         env:
@@ -24,6 +24,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add design_doc.html
+          git add design_doc/design_doc.html
           git commit -m "Update design_doc.html" || exit 0
           git push --set-upstream https://${MY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
