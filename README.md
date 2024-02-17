@@ -1,7 +1,7 @@
 
 # TradeMind AI
 
-![TradeMind AI Logo](temp.png)
+<img src="https://github.com/carsonSgit/TradeMind/assets/92652800/7deb2370-11e7-4520-a393-5ec43fd69670" alt="TradeMind AI Logo" width="800" />
 
 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
 
