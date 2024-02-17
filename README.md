@@ -33,4 +33,3 @@ To get started with TradeMind AI, follow these steps:
 
 1. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/carsonSgit/TradeMind`.
 2. **TBD...**
-3. TEST
