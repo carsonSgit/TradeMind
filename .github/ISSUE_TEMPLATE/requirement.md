@@ -1,3 +1,12 @@
+---
+name: Requirement
+about: Define a project requirement that can be resolved by completing a series of
+  Tasks
+title: ''
+labels: ''
+assignees: ''
+---
+
 ### Requirement Description
 A clear and concise description of the requirement
 
