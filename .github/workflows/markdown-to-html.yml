@@ -18,10 +18,12 @@ jobs:
       - name: Convert Markdown to HTML
         run: pandoc README.md -o design_doc.html --standalone --metadata title="TradeMind" -c design_doc.css
       
-      - name: Commit and push if README.html changed
+      - name: Commit and push if design_doc.html changed
+        env:
+          MY_TOKEN: ${{ secrets.MK_TO_HTML_TOKEN }}
         run: |
           git config --global user.email "kevin.baggott1@gmail.com"
           git config --global user.name "kbaggott1"
           git add design_doc.html
           git commit -m "Update design_doc.html" || exit 0
-          git push
+          git push --set-upstream https://${MY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
