@@ -22,8 +22,8 @@ jobs:
         env:
           MY_TOKEN: ${{ secrets.MK_TO_HTML_TOKEN }}
         run: |
-          git config --global user.email "kevin.baggott1@gmail.com"
-          git config --global user.name "kbaggott1"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add design_doc.html
           git commit -m "Update design_doc.html" || exit 0
           git push --set-upstream https://${MY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
