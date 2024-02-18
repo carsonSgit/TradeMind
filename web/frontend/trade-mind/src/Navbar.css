@@ -1,0 +1,37 @@
+.nav {
+    background-color: #333; 
+    padding: 10px 0;
+}
+  
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav-item {
+    margin-right: 20px;
+}
+  
+.nav-button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.nav-button {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+  
+.nav-button:hover {
+    color: #5a5293;
+    transform: scale(1.1);
+}
+  
