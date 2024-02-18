@@ -6,8 +6,6 @@ export default function DesignDocument() {
   useEffect(() => {
     const fetchHtmlContent = async () => {
       try {
-        const cssLink = '<link rel="stylesheet" href="https://raw.githubusercontent.com/carsonSgit/TradeMind/main/design_doc/design_doc.css">';
-
         const cssRes = await fetch('https://raw.githubusercontent.com/carsonSgit/TradeMind/main/design_doc/design_doc.css')
         const css = await cssRes.text();
         const response = await fetch('https://raw.githubusercontent.com/carsonSgit/TradeMind/main/design_doc/design_doc.html');
@@ -26,6 +24,10 @@ export default function DesignDocument() {
 
   return (
     //<div dangerouslySetInnerHTML={{__html: htmlContent}} />
-    <iframe srcDoc={htmlContent} title='design' style={{width:'99%', height:'85vh', border: 'None'} }/>
+    htmlContent  ? 
+        <iframe srcDoc={htmlContent} title='design' style={{width:'99%', height:'85vh', border: 'None'} }/>
+        : 
+        <p>Loading desgin document...</p>
+    
   );
 }
