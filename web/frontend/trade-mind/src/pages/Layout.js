@@ -43,7 +43,7 @@ const Layout = () => {
               }`}
               onClick={() => handleNavigation("/designdocument")}
             >
-              Design Document
+              Roadmap
             </button>
           </li>
           <li className="nav-item">
