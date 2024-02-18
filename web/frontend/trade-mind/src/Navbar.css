@@ -1,5 +1,8 @@
 .nav {
+    /* 
+    Uncomment if you want a background to navbar
     background-color: #333; 
+    */
     padding: 10px 0;
 }
   
@@ -16,12 +19,13 @@
 }
   
 .nav-button {
+    font-size: 18px;
     text-decoration: none;
     background-color: transparent;
     border: none;
     padding: 10px 20px;
-    color: #ffffff;
-    font-weight: bold;
+    color: #34323d;
+    font-weight:600;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -33,5 +37,9 @@
 .nav-button:hover {
     color: #5a5293;
     transform: scale(1.1);
+}
+
+.nav-button.active {
+    color: #8a84af;
 }
   
