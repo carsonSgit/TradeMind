@@ -27,7 +27,7 @@ export default function DesignDocument() {
     htmlContent  ? 
         <iframe srcDoc={htmlContent} title='design' style={{width:'99%', height:'85vh', border: 'None'} }/>
         : 
-        <p>Loading desgin document...</p>
+        <p>Loading design document...</p>
     
   );
 }
