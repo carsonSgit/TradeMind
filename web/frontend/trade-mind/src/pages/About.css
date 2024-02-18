@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .image{
+    padding: 20px, 20px, 20px, 20px; /* Add padding for the text container */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+
+  .text {
+    margin: 25px;
+    flex: 1;
+    padding: 20px, 20px, 0px, 20px; /* Add padding for the text container */
+    font-size: 20px;
+  }
+  
+  .left {
+    order: 1;
+  }
+  
+  .right {
+    order: 2;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+  
+  .devTitle {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .devSummary {
+    font-size: 110%;
+    padding-top: 10px; /* Add padding between title and text */
+  }
+
+  .devTitle {
+    font-size: 400%;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .image,
+    .text {
+      flex: 1;
+      padding: 20px 20px 0 20px; /* Add padding for the text container */
+      font-size: 20px;
+    }
+
+    .devTitle {
+        font-size: 200%;
+    }
+
+    .right{
+        order: 1;
+    }
+  }
