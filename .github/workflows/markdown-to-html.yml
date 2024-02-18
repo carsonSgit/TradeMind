@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - 'README.md'
-
+  workflow_dispatch:
+  
 jobs:
   convert-markdown:
     runs-on: ubuntu-latest
