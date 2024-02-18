@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import "./Loading.css"
 export default function DesignDocument() {
   const [htmlContent, setHtmlContent] = useState('');
 
@@ -27,7 +27,14 @@ export default function DesignDocument() {
     htmlContent  ? 
         <iframe srcDoc={htmlContent} title='design' style={{width:'99%', height:'85vh', border: 'None'} }/>
         : 
-        <p>Loading design document...</p>
+        <div class="wrapper" style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
     
   );
 }
