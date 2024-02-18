@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - 'README.md'
-
+  workflow_dispatch:
+  
 jobs:
   convert-markdown:
     runs-on: ubuntu-latest
@@ -16,7 +17,7 @@ jobs:
         run: sudo apt-get install -y pandoc
       
       - name: Convert Markdown to HTML
-        run: pandoc README.md -o design_doc/design_doc.html --standalone --metadata title="TradeMind" -c design_doc.css
+        run: pandoc README.md -o design_doc/design_doc.html --standalone -c design_doc.css
       
       - name: Commit and push if design_doc.html changed
         env:
