@@ -55,6 +55,7 @@
 
   .devTitle {
     font-size: 400%;
+    color: #522E93;
   }
   
   @media (max-width: 768px) {
