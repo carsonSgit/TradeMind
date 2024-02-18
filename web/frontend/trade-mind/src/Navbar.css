@@ -42,7 +42,6 @@
 .nav-button.active {
     color: #673AB7;
 }
-  
 
 /*
  *    Mobile Navbar
@@ -75,9 +74,10 @@
 }
   
 .menu-list {
-    list-style-type:circle;
+    list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
   
 .menu-item {
@@ -101,10 +101,7 @@
     flex-direction: column;
 }
 
-
-/*
- *  Causes hamburger menu to form an "X" on hover
- */
+/* Adjust hamburger icon animation */
 .menu-icon div:first-child {
     transform-origin: 0% 0%;
     transition: transform 0.3s ease;
@@ -120,18 +117,16 @@
     transition: transform 0.3s ease;
 }
 
-.menu-icon:hover div:first-child {
+/* Change hamburger icon to an "X" when checked */
+#menu-toggle:checked ~ .menu-icon div:first-child {
     transform: rotate(45deg);
 }
 
-.menu-icon:hover div:nth-child(2) {
+#menu-toggle:checked ~ .menu-icon div:nth-child(2) {
     transform: scaleX(0);
-    transition: transform 0.1s ease;
 }
 
-
-.menu-icon:hover div:last-child {
+#menu-toggle:checked ~ .menu-icon div:last-child {
     transform: rotate(-45deg);
 }
-  
-  
+
