@@ -1,9 +1,14 @@
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: #522E93;
   }
   
   .row {
@@ -11,6 +16,7 @@
     flex-direction: row;
     margin-bottom: 20px;
   }
+
   .image-container {
     display: flex;
     justify-content: center;
@@ -29,13 +35,11 @@
     transform: scale(1.01);
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
   }
-  
-  
 
   .text {
     margin: 25px;
     flex: 1;
-    padding: 20px, 20px, 0px, 20px; /* Add padding for the text container */
+    padding: 0px, 20px, 0px, 20px; /* Add padding for the text container */
     font-size: 20px;
   }
   
@@ -54,25 +58,84 @@
     height: auto;
   }
   
+  .summaryBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
   .text {
     box-sizing: border-box; /* Include padding in the total width */
   }
   
   .devTitle {
+    color:black;
     font-weight: bold;
     margin-bottom: 0;
   }
   
   .devSummary {
+    margin-left: 10px;
     font-size: 110%;
     padding-top: 10px; /* Add padding between title and text */
   }
 
   .devTitle {
-    font-size: 400%;
-    color: #522E93;
+    font-size: 250%;
+    color: black;
   }
   
+  .cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
   @media (max-width: 768px) {
     .row {
       flex-direction: column;
@@ -84,6 +147,11 @@
       flex: 1;
       padding: 20px 20px 0 20px; /* Add padding for the text container */
       font-size: 20px;
+    }
+
+    .devSummary {
+      margin: 0;
+      padding: 0;
     }
 
     .devTitle {
