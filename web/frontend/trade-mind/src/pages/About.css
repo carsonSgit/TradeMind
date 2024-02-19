@@ -17,26 +17,33 @@
     margin-bottom: 20px;
   }
 
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    overflow: hidden; 
-  }
-  
-  .image {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 50%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;;
-    height: 100%;
-    width: max-content;
-  }
-  
-  .image:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
-  }
+/* Improved CSS for image containers */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ 
+/* Styling for individual images */
+.image {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto; /* Set height to auto for responsiveness */
+  width: auto; /* Set width to auto for responsiveness */
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  width: fit-content;
+  height: 100%;
+}
+ 
+/* Hover effect */
+.image:hover {
+  transform: scale(1.05); /* Slightly increase scale on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Increase box-shadow size on hover */
+}
 
   .text {
     margin: 25px;
