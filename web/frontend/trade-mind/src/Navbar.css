@@ -17,31 +17,53 @@
 .nav-item {
     margin-right: 20px;
 }
-  
+
 .nav-button {
-    font-size: 18px;
+    font-size: larger;
     text-decoration: none;
     background-color: transparent;
     border: none;
     padding: 10px 20px;
     color: #34323d;
-    font-weight:600;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; 
+    overflow: hidden;
 }
-  
-.nav-button {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: right 0.5s ease, background-color 0.5s ease;
 }
-  
+
+.nav-button:hover::before,
+.nav-button.active::before {
+    background-color: #522E93; /* Underline's colour, if changing text, change this! */
+    right: 0; 
+}
+
 .nav-button:hover {
     color: #522E93;
+    transition: color 0.3s ease-in-out, transform 0.5s ease-out; 
     transform: scale(1.1);
+}
+
+.nav-button:not(:hover) {
+    transition: transform 0.5s ease-out; 
 }
 
 .nav-button.active {
     color: #673AB7;
 }
+
+
 
 /*
  *    Mobile Navbar
