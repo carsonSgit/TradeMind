@@ -11,6 +11,7 @@ const AboutPageText = ({ textContent, nameContent, side, link }) => {
           width="40"
           height="30"
           viewBox="0 0 46 16"
+          color='purple'
         >
         <path
           id="Path_10"
