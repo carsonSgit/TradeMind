@@ -25,7 +25,7 @@
     border: none;
     padding: 10px 20px;
     color: #34323d;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     position:relative; 
@@ -69,9 +69,8 @@
 /* Styling for the divider between nav bar and page content */
 hr {
     border: none;
-    height: 2px;
-    background-color: #ccc;
-    width: 75%;
+    height: 14px;
+    background-color: #cccccc00;
 }
   
   

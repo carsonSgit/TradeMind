@@ -5,7 +5,7 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 ## About AI Launch Lab's R&D AI Program
 
-AI Launch Lab's R&D AI Program is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
+[Ai Launch Lab's R&D AI Program](https://launchlab.ai/) is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
 
 ### The Program Roadmap
 
