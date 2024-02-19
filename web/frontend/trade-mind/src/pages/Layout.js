@@ -64,6 +64,7 @@ const Layout = () => {
           </button>
         </li>
       </ul>
+      
     );
   };
 
@@ -87,8 +88,8 @@ const Layout = () => {
           // Render regular nav links for non-mobile
           renderNavLinks()
         )}
+        <hr /> 
       </nav>
-
       <Outlet />
     </>
   );

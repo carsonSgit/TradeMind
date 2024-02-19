@@ -44,6 +44,8 @@
 }
 
 .nav-button:hover::before,
+/* If you don't want the active to have the underline, 
+    remove the line directly below */
 .nav-button.active::before {
     background-color: #522E93; /* Underline's colour, if changing text, change this! */
     right: 0; 
@@ -63,7 +65,15 @@
     color: #673AB7;
 }
 
-
+/* Styling for the divider between nav bar and page content */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 75%;
+  }
+  
+  
 
 /*
  *    Mobile Navbar
