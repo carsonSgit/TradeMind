@@ -38,7 +38,7 @@ export default function About() {
     const cindyPortfolio = "https://cindy-coulibaly.github.io/";
     const cindyLinkedIn = "https://www.linkedin.com/in/cindy-coulibaly-93543b294/"
     const cindyGithub = "https://github.com/Cindy-Coulibaly";
-    const cindyEmail = "";
+    const cindyEmail = "cindycoulibaly10@gmail.com";
 
     const felixSummary = "I'm a junior game developer with a keen interest in AI currently in my third year at LaSalle College." + 
     " My interest in coding is due to all the time i spent as a child playing on computers!" + 
@@ -67,7 +67,7 @@ export default function About() {
             <AboutPageText textContent={felixSummary} nameContent="Felix St-Laurent" side="left" site={felixPortfolio} github={felixGithub} linkdin={felixLinkedIn} email={felixEmail}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="../about/cindyIcon.jpg" side="right" />
+            <AboutPageImage imageUrl="../about/cindycoulibaly.jpeg" side="right" />
             <AboutPageText textContent={cindySummary} nameContent="Cindy Coulibaly" side="right" site={cindyPortfolio} github={cindyGithub} linkdin={cindyLinkedIn} email={cindyEmail}/>
           </div>
         </div>
