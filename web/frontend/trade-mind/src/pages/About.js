@@ -5,7 +5,7 @@ import AboutPageText from "../components/AboutPageText";
 
 
 export default function About() {
-    const cristianoSummary = "Hey! I’m Cristiano, a junior software developer with a passion for computer science. I am currently an intern at CAE and the time" + 
+    const cristianoSummary = "Hey! I’m Cristiano, a junior software developer with a passion for computer science. I am currently an intern at CAE and the time " + 
     "I’ve spent there has only served to further encourage me to pursue a career in this field. I believe the keys to success for any project are good " + 
     "planning, regular meetings and plenty of documentation. When I have some time off, I love spending time with friends and meeting new people!"
 
