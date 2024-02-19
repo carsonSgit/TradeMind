@@ -41,8 +41,8 @@ export default function About() {
     const cindyEmail = "";
 
     const felixSummary = "I'm a junior game developer with a keen interest in AI currently in my third year at LaSalle College." + 
-    " My interest in coding is due to all the time i spent as a child playing on computers," + 
-    " my hobbies include but are not limited to taking care of plants and playing games.";
+    " My interest in coding is due to all the time i spent as a child playing on computers!" + 
+    " My hobbies include but are not limited to taking care of plants and playing games.";
     const felixPortfolio = "https://github.com/Felixs123";
     const felixLinkedIn = "https://www.linkedin.com/in/felix-st-laurent-816aa12b3/"
     const felixGithub = "https://github.com/Felixs123";
