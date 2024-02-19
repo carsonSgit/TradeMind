@@ -40,9 +40,9 @@ export default function About() {
     const cindyGithub = "https://github.com/Cindy-Coulibaly";
     const cindyEmail = "";
 
-    const felixSummary = "I'm a junior game developer with a keen interest in AI, I bring a diverse skill set and a passion for innovation." + 
-    "a junior game developer with a keen interest in AI, I bring a diverse skill set and a passion for innovation." + 
-    "Let's work together to create something great!";
+    const felixSummary = "I'm a junior game developer with a keen interest in AI currently in my third year at LaSalle College." + 
+    " My interest in coding is due to all the time i spent as a child playing on computers," + 
+    " my hobbies include but are not limited to taking care of plants and playing games.";
     const felixPortfolio = "https://github.com/Felixs123";
     const felixLinkedIn = "https://www.linkedin.com/in/felix-st-laurent-816aa12b3/"
     const felixGithub = "https://github.com/Felixs123";
@@ -63,7 +63,7 @@ export default function About() {
             <AboutPageText textContent={carsonSummary} nameContent="Carson Spriggs" side="right" site={carsonPortfolio} github={carsonGithub} linkdin={carsonLinkedIn} email={carsonEmail}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="logo512.png" side="right" />
+            <AboutPageImage imageUrl="../about/FelixStL.png" side="right" />
             <AboutPageText textContent={felixSummary} nameContent="Felix St-Laurent" side="left" site={felixPortfolio} github={felixGithub} linkdin={felixLinkedIn} email={felixEmail}/>
           </div>
           <div className="row">
