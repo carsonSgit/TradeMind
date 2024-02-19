@@ -5,10 +5,12 @@
 html {
   scrollbar-gutter: stable both-edges;
 }
+
 ::selection {
   background: #b99bf083;
   color: #180933;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
