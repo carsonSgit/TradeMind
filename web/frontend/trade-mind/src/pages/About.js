@@ -50,7 +50,7 @@ export default function About() {
             <AboutPageText textContent={felixSummary} nameContent="Felix St-Laurent" side="left" link={felixLinkedIn}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="about/cindyIcon.jpg" side="right" />
+            <AboutPageImage imageUrl="../about/cindyIcon.jpg" side="right" />
             <AboutPageText textContent={cindySummary} nameContent="Cindy Coulibaly" side="right" link={cindyLinkedIn}/>
           </div>
         </div>
