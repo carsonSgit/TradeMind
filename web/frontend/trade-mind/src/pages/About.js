@@ -34,15 +34,15 @@ export default function About() {
     return (
         <div className="container">
           <div className="row">
-            <AboutPageImage imageUrl="about/cristianoImage.jpg" side="left" />
+            <AboutPageImage imageUrl="../about/cristianoImage.jpg" side="left" />
             <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="right" link={cristianoLinkedIn} />
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="about/kevin.webp" side="right" />
+            <AboutPageImage imageUrl="../about/kevin.webp" side="right" />
             <AboutPageText textContent={kevinSummary} nameContent="Kevin Baggott" side="left" link={kevinLinkedIn} />
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="about/carsonspriggs.jpg" side="right" />
+            <AboutPageImage imageUrl="../about/carsonspriggs.jpg" side="right" />
             <AboutPageText textContent={carsonSummary} nameContent="Carson Spriggs" side="right" link={carsonLinkedIn}/>
           </div>
           <div className="row">
