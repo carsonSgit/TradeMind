@@ -34,7 +34,7 @@ export default function About() {
     return (
         <div className="container">
           <div className="row">
-            <AboutPageImage imageUrl="logo512.png" side="left" />
+            <AboutPageImage imageUrl="about/cristianoImage.jpg" side="left" />
             <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="right" link={cristianoLinkedIn} />
           </div>
           <div className="row">
