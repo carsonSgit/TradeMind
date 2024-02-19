@@ -69,8 +69,8 @@
 /* Styling for the divider between nav bar and page content */
 hr {
     border: none;
-    height: 2px;
-    background-color: #ccc;
+    height: 8px;
+    background-color: #cccccc00;
     width: 75%;
 }
   
