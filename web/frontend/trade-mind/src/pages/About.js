@@ -17,7 +17,7 @@ export default function About() {
     const kevinLinkedIn = "https://www.linkedin.com/in/kevin-baggott-2135a4241/"
 
     const carsonSummary = "Hi, my name is Carson! I'm currently a 3rd year computer science student with a focus on software development! " + 
-    "My first experience with coding was an extra-curricular program at the YMCA for a Web Programming course. Having not been a big fan of school, I was really surprised at how much I enjoyed taking that course. " + 
+    "My first experience with coding was an extra-curricular program at the YMCA for a Web Programming course back in 2018. Having not been a big fan of school, I was really surprised at how much I enjoyed taking that course. " + 
     "Hobby-wise, I spend most of my free time either listening to music or working out.";
     const carsonLinkedIn = "https://www.linkedin.com/in/carson-spriggs-audet-609372217/"
 
