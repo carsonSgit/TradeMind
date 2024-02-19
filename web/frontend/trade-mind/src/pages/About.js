@@ -5,9 +5,11 @@ import AboutPageText from "../components/AboutPageText";
 
 
 export default function About() {
-    const cristianoSummary = "I'm a junior software developer that is dedicated to crafting efficient and user friendly solutions." + 
-    "With expertise in numerous technologies thanks to both my education and work experience, I can provide solutions using a great range of technologies." + 
-    "Let's work together to create something great!";
+    const cristianoSummary = "Hey! I’m Cristiano, a junior software developer with a passion for computer science. I am currently an intern at CAE and the time" + 
+    "I’ve spent there has only served to further encourage me to pursue a career in this field. I believe the keys to success for any project are good " + 
+    "planning, regular meetings and plenty of documentation. When I have some time off, I love spending time with friends and meeting new people!"
+
+
     const cristianoPortfolio = "https://cristiano-fazi.github.io/"
     const cristianoLinkedIn = "https://www.linkedin.com/in/cristiano-fazi-b21584208/"
     const cristianoGithub = 'https://github.com/Cristiano-Fazi';
@@ -50,11 +52,11 @@ export default function About() {
         <div className="container">
           <div className="row">
             <AboutPageImage imageUrl="../about/kevin.webp" side="left" />
-            <AboutPageText textContent={kevinSummary} nameContent="Kevin Baggott" side="right" site={kevinPortfolio} github={kevinGithub} linkdin={kevinLinkedIn} email={cristianoEmail}/>
+            <AboutPageText textContent={kevinSummary} nameContent="Kevin Baggott" side="right" site={kevinPortfolio} github={kevinGithub} linkdin={kevinLinkedIn} email={kevinEmail}/>
           </div>
           <div className="row">
             <AboutPageImage imageUrl="../about/cristianoImage.jpg" side="right" />
-            <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="left" site={cristianoPortfolio} github={cristianoGithub} linkdin={cristianoLinkedIn} email={kevinEmail}/>
+            <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="left" site={cristianoPortfolio} github={cristianoGithub} linkdin={cristianoLinkedIn} email={cristianoEmail}/>
           </div>
           <div className="row">
             <AboutPageImage imageUrl="../about/carsonspriggs.jpg" side="right" />
