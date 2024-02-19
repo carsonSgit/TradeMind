@@ -11,13 +11,25 @@
     flex-direction: row;
     margin-bottom: 20px;
   }
-  
-  .image{
-    padding: 20px, 20px, 20px, 20px; /* Add padding for the text container */
+  .image-container {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
   }
+  
+  .image {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.01);
+  }
+  
+  
 
   .text {
     margin: 25px;
@@ -36,6 +48,7 @@
   
   .responsive-image {
     max-width: 100%;
+    border: none;
     border-radius: 50%;
     height: auto;
   }
