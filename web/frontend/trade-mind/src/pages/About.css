@@ -38,7 +38,7 @@
   .text {
     margin: 25px;
     flex: 1;
-    padding: 20px, 20px, 0px, 20px; /* Add padding for the text container */
+    padding: 0px, 20px, 0px, 20px; /* Add padding for the text container */
     font-size: 20px;
   }
   
@@ -75,9 +75,9 @@
   }
   
   .devSummary {
+    margin-left: 10px;
     font-size: 110%;
     padding-top: 10px; /* Add padding between title and text */
-    
   }
 
   .devTitle {
@@ -146,6 +146,11 @@
       flex: 1;
       padding: 20px 20px 0 20px; /* Add padding for the text container */
       font-size: 20px;
+    }
+
+    .devSummary {
+      margin: 0;
+      padding: 0;
     }
 
     .devTitle {

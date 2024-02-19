@@ -21,9 +21,9 @@ export default function About() {
     "Hobby-wise, I spend most of my free time either listening to music or working out.";
     const carsonLinkedIn = "https://www.linkedin.com/in/carson-spriggs-audet-609372217/"
 
-    const cindySummary = "I'm a junior software developer that is dedicated to crafting efficient and user friendly solutions. " + 
-    "With expertise in numerous technologies thanks to both my education and work experience, I can provide solutions using a great range of technologies. " + 
-    "Let's work together to create something great!";
+    const cindySummary = "Hi there, I'm Cindy, currently a third-year Computer Science student at John Abbott College. " + 
+    "My passion for computers and technology has been with me since childhood. In my free time, " + 
+    "you can often find me working out, diving into a good book, or enjoying some music.";
     const cindyLinkedIn = "https://www.linkedin.com/in/cindy-coulibaly-93543b294/"
 
     const felixSummary = "I'm a junior game developer with a keen interest in AI, I bring a diverse skill set and a passion for innovation." + 
@@ -50,7 +50,7 @@ export default function About() {
             <AboutPageText textContent={felixSummary} nameContent="Felix St-Laurent" side="left" link={felixLinkedIn}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="logo512.png" side="right" />
+            <AboutPageImage imageUrl="about/cindyIcon.jpg" side="right" />
             <AboutPageText textContent={cindySummary} nameContent="Cindy Coulibaly" side="right" link={cindyLinkedIn}/>
           </div>
         </div>
