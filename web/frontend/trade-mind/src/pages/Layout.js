@@ -25,11 +25,13 @@ const Layout = () => {
   };
 
   const renderNavLinks = () => {
+    const normalizedPathname = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
+    
     return (
       <ul className={`nav-list ${isMobile ? 'vertical' : ''}`}>
         <li className="nav-item">
           <button
-            className={`nav-button ${activeLink === "/" ? "active" : ""}`}
+            className={`nav-button ${normalizedPathname === "" ? "active" : ""}`}
             onClick={() => handleNavigation("/")}
           >
             Home
@@ -37,7 +39,7 @@ const Layout = () => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-button ${activeLink === "/about" ? "active" : ""}`}
+            className={`nav-button ${normalizedPathname === "/about" ? "active" : ""}`}
             onClick={() => handleNavigation("/about")}
           >
             About
@@ -45,9 +47,7 @@ const Layout = () => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-button ${
-              activeLink === "/designdocument" ? "active" : ""
-            }`}
+            className={`nav-button ${normalizedPathname === "/designdocument" ? "active" : ""}`}
             onClick={() => handleNavigation("/designdocument")}
           >
             Roadmap
@@ -55,18 +55,17 @@ const Layout = () => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-button ${
-              activeLink === "/analytics" ? "active" : ""
-            }`}
+            className={`nav-button ${normalizedPathname === "/analytics" ? "active" : ""}`}
             onClick={() => handleNavigation("/analytics")}
           >
             Analytics
           </button>
         </li>
       </ul>
-      
     );
   };
+  
+  
 
   return (
     <>
