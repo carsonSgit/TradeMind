@@ -28,12 +28,12 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    position: relative; 
+    position:relative; 
     overflow: hidden;
 }
 
 .nav-button::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 100%;
@@ -65,13 +65,14 @@
     color: #673AB7;
 }
 
+
 /* Styling for the divider between nav bar and page content */
 hr {
     border: none;
     height: 2px;
     background-color: #ccc;
     width: 75%;
-  }
+}
   
   
 
