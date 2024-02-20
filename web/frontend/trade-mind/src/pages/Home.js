@@ -6,7 +6,7 @@ export default function Home() {
 
     return (
         <>
-            <div className={"landingContainer wave-container"}>
+            <div className={"landingContainer"}>
                 <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet" />         
 
                 <img src="../hero.jpg"></img>
@@ -19,11 +19,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className={'wave-container'}></div>
             <div className={'contentContainer'} >
                 <h1>Content will go under heresies</h1>
             </div>
         </>
-
-
     )
 }

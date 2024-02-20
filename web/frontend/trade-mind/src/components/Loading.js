@@ -1,12 +1,12 @@
 export default function Loading({style}) {
     return (
-        <div class="wrapper" style={style}>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
+        <div className="wrapper" style={style}>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="shadow"></div>
+        <div className="shadow"></div>
+        <div className="shadow"></div>
     </div>
     )
 }
