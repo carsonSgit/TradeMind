@@ -4,6 +4,7 @@
 
 html {
   scrollbar-gutter: stable both-edges;
+  margin-left: 0;
 }
 
 ::selection {
