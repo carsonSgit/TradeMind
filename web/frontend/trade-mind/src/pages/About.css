@@ -1,21 +1,21 @@
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  a {
-    text-decoration: none;
-    color: #522E93;
-  }
+a {
+  text-decoration: none;
+  color: #522E93;
+}
   
-  .row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
 
 /* Improved CSS for image containers */
 .image-container {
@@ -45,204 +45,204 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Increase box-shadow size on hover */
 }
 
+.text {
+  margin: 25px;
+  flex: 1;
+  padding: 0px, 20px, 0px, 20px; /* Add padding for the text container */
+  font-size: 20px;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 2;
+}
+
+.responsive-image {
+  max-width: 100%;
+  border: none;
+  border-radius: 50%;
+  height: auto;
+}
+
+.summaryBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text {
+  box-sizing: border-box; /* Include padding in the total width */
+}
+
+.devTitle {
+  color:black;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.devSummary {
+  margin-left: 10px;
+  font-size: 110%;
+  padding-top: 10px; /* Add padding between title and text */
+}
+
+.devTitle {
+  font-size: 250%;
+  color: black;
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #522E93;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #522E93;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social-card {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgb(255, 255, 255);
+  padding: 20px 0px;
+  border-radius: 14px;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-color: transparent;;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.8px;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.svgIcon {
+  scale: 1.5;
+  transition: all 0.5s;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: 1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+}
+.github .BG {
+  background: #FFFFFF;
+}
+.linkdin .BG {
+  background: #FFFFFF;
+}
+.whatsapp .BG {
+  background: #FFFFFF;
+}
+
+.svgIcon:hover {
+  transform: scale(1.5);
+}
+
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .image {
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  .devTitle {
+    margin-bottom: 10px;
+  }
   .text {
-    margin: 25px;
     flex: 1;
-    padding: 0px, 20px, 0px, 20px; /* Add padding for the text container */
+    padding: 20px 20px 0 20px; /* Add padding for the text container */
     font-size: 20px;
   }
-  
-  .left {
-    order: 1;
-  }
-  
-  .right {
-    order: 2;
-  }
-  
-  .responsive-image {
-    max-width: 100%;
-    border: none;
-    border-radius: 50%;
-    height: auto;
-  }
-  
-  .summaryBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
 
-  .text {
-    box-sizing: border-box; /* Include padding in the total width */
-  }
-  
-  .devTitle {
-    color:black;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  
   .devSummary {
-    margin-left: 10px;
-    font-size: 110%;
-    padding-top: 10px; /* Add padding between title and text */
+    margin: 0;
+    padding: 0;
   }
 
   .devTitle {
-    font-size: 250%;
-    color: black;
-  }
-  
-  .cta {
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .cta span {
-    padding-bottom: 7px;
-    padding-right: 15px;
-    text-transform: uppercase;
-  }
-  
-  .cta svg {
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
-  }
-  
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  
-  .cta:active svg {
-    transform: scale(0.9);
-  }
-  
-  .hover-underline-animation {
-    position: relative;
-    color: #522E93;
-    padding-bottom: 20px;
-  }
-  
-  .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #522E93;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+      font-size: 200%;
   }
 
-  .social-card {
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: rgb(255, 255, 255);
-    padding: 20px 0px;
-    border-radius: 14px;
+  .right{
+      order: 1;
   }
-  .Btn {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-color: transparent;;
-    background-color: transparent;
-    position: relative;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .svgContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.8px;
-    transition: all 0.3s;
-    z-index: 2;
-  }
-
-  .svgIcon {
-    scale: 1.5;
-    transition: all 0.5s;
-  }
-  
-  .BG {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #181818;
-    z-index: 1;
-    border-radius: 10px;
-    pointer-events: none;
-    transition: all 0.3s;
-    font-size: 0px;
-  }
-  .github .BG {
-    background: #FFFFFF;
-  }
-  .linkdin .BG {
-    background: #FFFFFF;
-  }
-  .whatsapp .BG {
-    background: #FFFFFF;
-  }
-  
-  .svgIcon:hover {
-    transform: scale(1.5);
-  }
-  
-  
-
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      margin-bottom: 30px;
-    }
-
-    .image {
-      border-radius: 50%;
-      margin: 20px;
-    }
-
-    .devTitle {
-      margin-bottom: 10px;
-    }
-    .text {
-      flex: 1;
-      padding: 20px 20px 0 20px; /* Add padding for the text container */
-      font-size: 20px;
-    }
-
-    .devSummary {
-      margin: 0;
-      padding: 0;
-    }
-
-    .devTitle {
-        font-size: 200%;
-    }
-
-    .right{
-        order: 1;
-    }
-  }
+}
