@@ -24,9 +24,6 @@
     justify-content: center;
 }
 
-.buttonContainer a:hover {
-    color: white;
-}
 .buttonContainer button {
     position: relative;
     display: inline-block;
@@ -43,6 +40,8 @@
     border: 3px solid #443a90;
     border-radius: 10px;
     box-shadow: inset 0 0 0 0 #443a90;
+
+    font-size: x-large;
   }
   
 .buttonContainer button:hover {
