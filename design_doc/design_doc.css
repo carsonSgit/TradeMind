@@ -8,6 +8,20 @@
       text-shadow: none !important;
     }
   
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #443a90bd;
+      border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: #443a9029;
+      border-radius: 0px;
+    }
+
     a,
     a:visited {
       text-decoration: underline;
@@ -151,7 +165,7 @@
     color: #444;
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 300;
-    margin: 6rem auto 1rem;
+    margin: auto;
     max-width: 48rem;
     text-align: center;
   }
