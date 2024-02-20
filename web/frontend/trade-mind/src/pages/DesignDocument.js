@@ -18,7 +18,7 @@ export default function DesignDocument() {
         const htmlWithCss = html + "<style>" + css + "</style>";
 
 
-        setHtmlContent(htmlWithCss);
+        setHtmlContent({__html: htmlWithCss});
       } catch (error) {
         console.error("Failed to fetch HTML content:", error);
         setHtmlContent('<p>Failed to load content.</p>');
@@ -34,11 +34,12 @@ export default function DesignDocument() {
     isLoading ?  
       <Loading style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} />
       :  
-      <iframe  
-        srcDoc={htmlContent}  
-        title='design'  
-        style={{width:'99%', height:'85vh', border: 'None'}}  
-        onLoad={() => setIsLoading(false)} // Set isLoading to false when iframe loads
-      />
+      <div dangerouslySetInnerHTML={htmlContent}></div>
+      // <iframe  
+      //   srcDoc={htmlContent}  
+      //   title='design'  
+      //   style={{width:'99%', height:'85vh', border: 'None'}}  
+      //   onLoad={() => setIsLoading(false)} // Set isLoading to false when iframe loads
+      // />
   );
 }
