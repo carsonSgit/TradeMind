@@ -11,6 +11,21 @@ html {
   color: #180933;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #443a90bd;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #443a9029;
+  border-radius: 5px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
