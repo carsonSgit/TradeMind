@@ -1,22 +1,31 @@
 .wave-container {  
-    margin-top: 80px;
+    margin-top: 150px;
     background-color: #ffffff;
     position: relative;
 }
   
-.wave-container::before {
-    content: "";
-    background-color: white;
-    width: 100%;
-    height: 50px;
+/* Wave divider */
+.custom-shape-divider-bottom-1708470298 {
     position: absolute;
-    bottom: 0; /* Aligns the pseudo-element to the bottom of the container */
+    bottom: 0;
     left: 0;
-    background-size: auto;
-    background-repeat: repeat no-repeat;
-    background-position: 44vw bottom;
-    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23443a90'/></svg>");
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
+
+.custom-shape-divider-bottom-1708470298 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1708470298 .shape-fill {
+    fill: #443A90;
+}
+/* Wave divider */
 @media(max-width:850px) {
     .wave-container::before {    
       height: 38.5px
@@ -96,7 +105,7 @@
         width: 100%;
     }
     .landingContainer img {
-        width: 100%;
+        width: 90%;
     }
     .buttonContainer {
         flex-direction: column;
