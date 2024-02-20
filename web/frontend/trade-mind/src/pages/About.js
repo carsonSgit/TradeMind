@@ -55,7 +55,7 @@ export default function About() {
             <AboutPageText textContent={kevinSummary} nameContent="Kevin Baggott" side="right" site={kevinPortfolio} github={kevinGithub} linkdin={kevinLinkedIn} email={kevinEmail}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="../about/cristianoImage.jpg" side="right" />
+            <AboutPageImage imageUrl="../about/cristianoimage.jpg" side="right" />
             <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="left" site={cristianoPortfolio} github={cristianoGithub} linkdin={cristianoLinkedIn} email={cristianoEmail}/>
           </div>
           <div className="row">
@@ -63,7 +63,7 @@ export default function About() {
             <AboutPageText textContent={carsonSummary} nameContent="Carson Spriggs" side="right" site={carsonPortfolio} github={carsonGithub} linkdin={carsonLinkedIn} email={carsonEmail}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="../about/FelixStL.png" side="right" />
+            <AboutPageImage imageUrl="../about/felixstl.png" side="right" />
             <AboutPageText textContent={felixSummary} nameContent="Felix St-Laurent" side="left" site={felixPortfolio} github={felixGithub} linkdin={felixLinkedIn} email={felixEmail}/>
           </div>
           <div className="row">
