@@ -11,7 +11,7 @@ const AboutPageText = ({ textContent, nameContent, side, site, github, linkdin, 
           width="40"
           height="30"
           viewBox="0 0 46 16"
-          color='purple'
+          fill='#522E93'
         >
         <path
           id="Path_10"
