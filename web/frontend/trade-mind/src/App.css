@@ -7,7 +7,7 @@ html {
 }
 
 ::selection {
-  background: #b99bf083;
+  background: rgba(118, 98, 156, 0.394);
   color: #180933;
 }
 
