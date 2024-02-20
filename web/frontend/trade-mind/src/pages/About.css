@@ -8,7 +8,7 @@
 
   a {
     text-decoration: none;
-    color: #522E93;
+    color: #443a90;
   }
   
   .row {
@@ -122,7 +122,7 @@
   
   .hover-underline-animation {
     position: relative;
-    color: #522E93;
+    color: #443a90;
     padding-bottom: 20px;
   }
   
@@ -134,7 +134,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #522E93;
+    background-color: #443a90;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
