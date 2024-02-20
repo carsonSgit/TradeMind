@@ -10,11 +10,14 @@ export default function DesignDocument() {
     const fetchHtmlContent = async () => {
       setIsLoading(true); // Set isLoading to true before fetching
       try {
+
         const cssRes = await fetch('https://raw.githubusercontent.com/carsonSgit/TradeMind/main/design_doc/design_doc.css')
         const css = await cssRes.text();
         const response = await fetch('https://raw.githubusercontent.com/carsonSgit/TradeMind/main/design_doc/design_doc.html');
         const html = await response.text();
         const htmlWithCss = html + "<style>" + css + "</style>";
+
+
         setHtmlContent(htmlWithCss);
       } catch (error) {
         console.error("Failed to fetch HTML content:", error);
