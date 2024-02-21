@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 import { useNavigate } from 'react-router-dom'
+import HomePageText from '../components/HomePageText';
+import HomePageImage from '../components/HomePageImage';
+import AboutPageImage from '../components/AboutPageImage';
+
 export default function Home() {
+    const cristianoSummary = "Hey! I’m Cristiano, a junior software developer with a passion for computer science. I am currently an intern at CAE and the time " + 
+    "I’ve spent there has only served to further encourage me to pursue a career in this field. I believe the keys to success for any project are good " + 
+    "planning, regular meetings and plenty of documentation. When I have some time off, I love spending time with friends and meeting new people!"
+
+
     let navigate = useNavigate();
 
     return (
@@ -14,7 +23,7 @@ export default function Home() {
                     <h1>TRADEMIND</h1>
                     <div className='buttonContainer'>
                         <button>Our Mission</button>
-                        <button onClick={() => navigate('about')}>Our Team</button>
+                        <button onClick={() => {navigate('about'); window.scrollTo(0,0)}}>Our Team</button>
                         <button>Our Product</button>
                     </div>
                 </div>
@@ -30,7 +39,10 @@ export default function Home() {
             </div>
 
             <div className={'contentContainer'} >
-                <h1>Content will go under heresies</h1>
+                <div className="home-page-row-container row">
+                    <HomePageText text={cristianoSummary} side="left"></HomePageText>
+                    <HomePageImage imageUrl="../about/cristianoimage.jpg" side="right"></HomePageImage>
+                </div>
             </div>
         </>
     )

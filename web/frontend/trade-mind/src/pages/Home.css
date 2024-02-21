@@ -25,6 +25,10 @@
 .custom-shape-divider-bottom-1708470298 .shape-fill {
     fill: #443A90;
 }
+
+.home-page-block-text {
+    width: 50%;
+}
 /* Wave divider */
 @media(max-width:850px) {
     .wave-container::before {    
@@ -40,8 +44,10 @@
     margin: 0;
     color: white;
     min-height: 100%;
-    padding: 10vh;
+    padding: 10px;
+    
 }
+
 .landingContainer {
     display: flex;
     flex-direction: column;
@@ -156,6 +162,9 @@
 .home-page-row-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
 }
   
 @media (max-width: 768px) {
