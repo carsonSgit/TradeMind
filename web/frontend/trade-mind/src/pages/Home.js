@@ -14,7 +14,7 @@ export default function Home() {
                     <h1>TRADEMIND</h1>
                     <div className='buttonContainer'>
                         <button>Our Mission</button>
-                        <button onClick={() => navigate('about')}>Our Team</button>
+                        <button onClick={() => {navigate('about'); window.scrollTo(0,0)}}>Our Team</button>
                         <button>Our Product</button>
                     </div>
                 </div>
