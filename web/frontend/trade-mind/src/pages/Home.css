@@ -40,8 +40,10 @@
     margin: 0;
     color: white;
     min-height: 100%;
-    padding: 10vh;
+    padding: 10px;
+    
 }
+
 .landingContainer {
     display: flex;
     flex-direction: column;
@@ -98,6 +100,68 @@
 .buttonContainer button:active {
     transform: scale(0.9);
 }
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    flex: 1;
+    padding: 0px, 20px, 0px, 20px; /* Add padding for the text container */
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .left {
+    order: 1;
+  }
+  
+.right {
+    order: 2;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.home-page-image {
+    flex: 1;
+    margin: 10px;
+    margin: 10px;
+}
+
+.home-page-info-block-title {
+    font-size: 400%;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-align: center;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.home-page-image {
+    max-width: min-content;
+    height: auto; /* Maintain aspect ratio for the image */
+    display: block;
+}
+
+.home-page-row-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+  
 
 @media (max-width: 768px) {
     .landingContainer {
