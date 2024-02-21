@@ -47,12 +47,12 @@
 /* If you don't want the active to have the underline, 
     remove the line directly below */
 .nav-button.active::before {
-    background-color: #522E93; /* Underline's colour, if changing text, change this! */
+    background-color: #443A90; /* Underline's colour, if changing text, change this! */
     right: 0; 
 }
 
 .nav-button:hover {
-    color: #522E93;
+    color: #443A90;
     transition: color 0.3s ease-in-out, transform 0.5s ease-out; 
     transform: scale(1.1);
 }
@@ -62,7 +62,7 @@
 }
 
 .nav-button.active {
-    color: #673AB7;
+    color: #594dba;
 }
 
 
@@ -125,7 +125,7 @@ hr {
 }
   
 .menu-button:hover {
-    color: #522E93;
+    color: #443A90;
 }
 
 /* Lists nav-items vertically */
