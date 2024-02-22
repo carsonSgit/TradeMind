@@ -6,9 +6,11 @@ import HomePageImage from '../components/HomePageImage';
 import AboutPageImage from '../components/AboutPageImage';
 
 export default function Home() {
-    const cristianoSummary = "Hey! I’m Cristiano, a junior software developer with a passion for computer science. I am currently an intern at CAE and the time " + 
-    "I’ve spent there has only served to further encourage me to pursue a career in this field. I believe the keys to success for any project are good " + 
-    "planning, regular meetings and plenty of documentation. When I have some time off, I love spending time with friends and meeting new people!"
+    const missionStatement = "our mission text the two options:  At our core, we're driven by the belief that artificial intelligence can transform " +  
+    "the way we understand and navigate the stock market. Our mission is simple: to provide everyday investors with powerful insights and predictive " +
+    "analysis that empower them to make smarter decisions. We're committed to using the latest AI techniques to decode the complexities of the stock " + 
+    "market, giving people the confidence and tools they need to thrive in the world of investing. Together, we're reshaping the future of finance, " + 
+    "one prediction at a time."
 
 
     let navigate = useNavigate();
@@ -40,8 +42,8 @@ export default function Home() {
 
             <div className={'contentContainer'} >
                 <div className="home-page-row-container row">
-                    <HomePageText text={cristianoSummary} side="left"></HomePageText>
-                    <HomePageImage imageUrl="../about/cristianoimage.jpg" side="right"></HomePageImage>
+                    <HomePageText text={missionStatement} title="Our Mission" side="left"></HomePageText>
+                    <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="right"></HomePageImage>
                 </div>
             </div>
         </>
