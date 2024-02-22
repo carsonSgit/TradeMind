@@ -130,12 +130,29 @@
 }
 
 .home-page-image {
-    border-radius: 15px;
+    border-radius: 0px;
     align-items: center;
     justify-content: center;
     flex: 1;
-    width: 100%;
     margin: 20px;
+}
+
+.home-image {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-image.left:hover {
+    transform: translateY(-25px) rotate(1deg) skew(0deg, 2.5deg);
+    box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.home-image.right:hover {
+    transform: translateY(-15px) rotate(-1deg) skew(0deg, -2.5deg);
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .home-page-info-block-title {
@@ -165,7 +182,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1200px;
-
+    padding-bottom: 75px;
 }
   
 @media (max-width: 768px) {

@@ -5,6 +5,7 @@
 html {
   /* scrollbar-gutter: stable both-edges; */
   margin-left: 0;
+  scroll-behavior: smooth;
 }
 
 ::selection {

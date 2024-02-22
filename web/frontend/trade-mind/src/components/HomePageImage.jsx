@@ -3,7 +3,7 @@ import React from 'react';
 const HomePageImage = ({ imageUrl, side }) => {
   return (
     <div className={`home-page-image ${side}`}>
-      <img src={imageUrl} alt="About" className='home-page-image'/>
+      <img src={imageUrl} alt="About" className={`home-image ${side}`}/>
     </div>
   );
 };
