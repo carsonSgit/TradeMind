@@ -226,6 +226,8 @@ a {
 
   .devTitle {
     margin-bottom: 10px;
+    margin-right: 25px ;
+    margin-left: 25px; 
   }
   .text {
     flex: 1;

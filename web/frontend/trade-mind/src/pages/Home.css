@@ -183,6 +183,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     padding-bottom: 75px;
+    align-items: center;
 }
   
 @media (max-width: 768px) {
@@ -198,5 +199,16 @@
     }
     .titleContainer h1 {
         font-size: 80px;
+    }
+    .home-page-block-text {
+        width: 100%;
+    }
+    .home-page-row-container {
+        padding: 0;
+    }
+    .text {
+        padding: 0;
+        font-size: 18px;
+        margin: 0 !important
     }
 }
