@@ -44,18 +44,18 @@ export default function Home() {
             </div>
 
             <div className={'contentContainer'} >
+                <div id='OurMissionSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurMissionSection'></div>
                     <HomePageText text={missionStatement} title="Our Mission" side="left"></HomePageText>
                     <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="right"></HomePageImage>
                 </div>
+                <div id='OurTeamSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurTeamSection'></div>
                     <HomePageText text={teamStatement} title="Our Team" side="right"></HomePageText>
                     <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="left"></HomePageImage>
                 </div>
+                <div id='OurProductSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurProductSection'></div>
                     <HomePageText text={productStatement} title="Our Product" side="left"></HomePageText>
                     <HomePageImage imageUrl="../home/OurMissionIconRobot.webp" side="right"></HomePageImage>
                 </div>
