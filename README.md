@@ -3,11 +3,11 @@
 <br>
 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
 
-## About AI Launch Lab's R&D AI Program
+# About AI Launch Lab's R&D AI Program
 
 [Ai Launch Lab's R&D AI Program](https://launchlab.ai/) is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
 
-### The Program Roadmap
+## The Program Roadmap
 
 - **Weeks 1-6**: Weekly sessions covering diverse AI topics facilitated by AI specialists. Participants engage in quizzes and activities to reinforce learning. Concurrently, teams work on developing their projects under the guidance of mentors.
 
