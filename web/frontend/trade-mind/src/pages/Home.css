@@ -159,7 +159,7 @@
     position: relative;
     font-size: 400%;
     font-weight: 400;
-    font-style: italic;
+    font-style: oblique 1deg;
     text-align: center;
     text-decoration: none;
 }
