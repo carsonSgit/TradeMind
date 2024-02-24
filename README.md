@@ -22,6 +22,8 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
+See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing)
+
 ## Problem Identification and Scope
 
 ### Problem Definition
