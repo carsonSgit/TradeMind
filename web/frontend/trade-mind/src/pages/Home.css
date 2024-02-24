@@ -15,6 +15,15 @@
     transform: rotate(180deg);
 }
 
+.landingContainer video {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
 .custom-shape-divider-bottom-1708470298 svg {
     position: relative;
     display: block;
@@ -214,7 +223,7 @@
         margin: auto;
         width: 100%;
     }
-    .landingContainer img {
+    .landingContainer video {
         width: 90%;
     }
     .buttonContainer {

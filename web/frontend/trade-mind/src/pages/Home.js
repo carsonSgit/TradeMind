@@ -26,7 +26,11 @@ export default function Home() {
             <div className={"landingContainer"}>
                 <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet" />         
 
-                <img src="../hero.jpg"></img>
+                {/* <img src="../hero_animated.webp"></img> */}
+                <video autoPlay={true} loop={true} muted={true} playsInline={true}>
+                    <source src="../hero_video.mp4" type='video/mp4'></source>
+                    Your browser does not support the video tag.
+                </video>
                 <div className='titleContainer'>
                     <h1>TRADEMIND</h1>
                     <div className='buttonContainer'>
