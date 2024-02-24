@@ -17,13 +17,30 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 - **Week 9**: Final presentations of AI projects at Dawson College on Friday, April 5, 2024. Certificates will be awarded based on project completion, attendance, and participation.
 
-## Project Overview
+
+# Project Overview
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
-### Key Features
+## Problem Identification and Scope
 
-- **TBD...**
+### Problem Definition
+
+Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don't have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can't afford. Our goal in creating TradeMind is to make stock trading more accessible to all.
+
+### Success Criteria
+
+### Front-End
+
+A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.
+
+### Back-End
+
+Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
+
+### AI Model
+
+Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
 
 ## Getting Started
 
