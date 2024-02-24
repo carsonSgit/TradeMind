@@ -1,5 +1,4 @@
 import './Home.css'
-import { useNavigate } from 'react-router-dom'
 import HomePageText from '../components/HomePageText';
 import HomePageImage from '../components/HomePageImage';
 
@@ -18,8 +17,6 @@ export default function Home() {
     const productStatement = "TradeMind is an AI-driven system engineered for stock market prediction. The goal for TradeMind is to allow people without the time " +
     "to study the stock market an opportunity to trade stocks with confidence. Our product has been trained on large quantities of data which allows it to accurately " + 
     "determine long term future stock prices. Thanks to our dedication as well as extensive training and testing, we have ensured you can put your full confidence in our product. "
-    
-    let navigate = useNavigate();
 
     return (
         <>
@@ -51,18 +48,18 @@ export default function Home() {
             </div>
 
             <div className={'contentContainer'} >
+                <div id='OurMissionSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurMissionSection'></div>
                     <HomePageText text={missionStatement} title="Our Mission" side="left"></HomePageText>
                     <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="right"></HomePageImage>
                 </div>
+                <div id='OurTeamSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurTeamSection'></div>
                     <HomePageText text={teamStatement} title="Our Team" side="right"></HomePageText>
                     <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="left"></HomePageImage>
                 </div>
+                <div id='OurProductSection'></div>
                 <div className="home-page-row-container row">
-                    <div id='OurProductSection'></div>
                     <HomePageText text={productStatement} title="Our Product" side="left"></HomePageText>
                     <HomePageImage imageUrl="../home/OurMissionIconRobot.webp" side="right"></HomePageImage>
                 </div>
