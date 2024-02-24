@@ -39,6 +39,16 @@ For the AI model, we'll utilize the following attributes/features from the datas
 6. Volume (Number of shares traded)
 7. Name (Stock ticker)
 
+### Data Cleaning
+
+- **Handling Missing Values:**
+We'll assess each column for missing data. If only a few values are missing, we'll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.
+
+- **Handling Outliers:**
+Outliers can arise from extreme market shifts, data collection errors, or corporate events. We'll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.
+
+- **Handling Inconsistencies:**
+We'll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.
 
 ### Key Features
 
