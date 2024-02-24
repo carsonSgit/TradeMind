@@ -6,11 +6,18 @@ import HomePageImage from '../components/HomePageImage';
 import AboutPageImage from '../components/AboutPageImage';
 
 export default function Home() {
-    const missionStatement = "Our mission text the two options:  At our core, we're driven by the belief that artificial intelligence can transform " +  
+    const missionStatement = "At our core, we're driven by the belief that artificial intelligence can transform " +  
     "the way we understand and navigate the stock market. Our mission is simple: to provide everyday investors with powerful insights and predictive " +
     "analysis that empower them to make smarter decisions. We're committed to using the latest AI techniques to decode the complexities of the stock " + 
     "market, giving people the confidence and tools they need to thrive in the world of investing. Together, we're reshaping the future of finance, " + 
-    "one prediction at a time."
+    "one prediction at a time.";
+
+    const teamStatement = "Our team consist of four passionate junior software developers driven by a shared enthusiasm for finance and the stock market." +
+     "With a keen interest in making this sector more reliable for investors.";
+
+    const productStatement = "Trademind AI is an AI-driven system for stock market prediction." + 
+    "It uses advanced algorithms to analyze market trends, news sentiment, and economic indicators for accurate forecasts." + 
+    "Key features include real-time analysis, risk assessment, customizable alerts, and performance tracking."
 
     let navigate = useNavigate();
 
@@ -47,12 +54,12 @@ export default function Home() {
                 </div>
                 <div className="home-page-row-container row">
                     <div id='OurTeamSection'></div>
-                    <HomePageText text={missionStatement} title="Our Team" side="right"></HomePageText>
+                    <HomePageText text={teamStatement} title="Our Team" side="right"></HomePageText>
                     <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="left"></HomePageImage>
                 </div>
                 <div className="home-page-row-container row">
                     <div id='OurProductSection'></div>
-                    <HomePageText text={missionStatement} title="Our Product" side="left"></HomePageText>
+                    <HomePageText text={productStatement} title="Our Product" side="left"></HomePageText>
                     <HomePageImage imageUrl="../home/OurMissionIconRobot.webp" side="right"></HomePageImage>
                 </div>
             </div>
