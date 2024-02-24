@@ -59,7 +59,9 @@
       max-width: 100% !important;
     }
   
-    p,
+    p {
+      text-align: left;
+    }
     h2,
     h3 {
       orphans: 3;
