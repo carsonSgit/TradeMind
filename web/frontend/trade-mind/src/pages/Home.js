@@ -15,10 +15,8 @@ export default function Home() {
     const teamStatement = "Our team consists of five junior software developers with a shared passion for the world of finance and the stock market! " +
      "We aim to create a more reliable source of information for everyday investors.";
 
-    const productStatement = "Trademind AI is an AI-driven system for stock market prediction." + 
-    "It uses advanced algorithms to analyze market trends, news sentiment, and economic indicators for accurate forecasts." + 
-    "Key features include real-time analysis, risk assessment, customizable alerts, and performance tracking."
-
+    const productStatement = "Trademind AI is an intelligent solution for stock market prediction and analysis. " + 
+    "We use advanced algorithms to analyze market trends and economic indicators for accurate stock forecasts. ";
     let navigate = useNavigate();
 
     return (
