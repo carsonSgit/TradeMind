@@ -12,8 +12,8 @@ export default function Home() {
     "market, giving people the confidence and tools they need to thrive in the world of investing. Together, we're reshaping the future of finance, " + 
     "one prediction at a time.";
 
-    const teamStatement = "Our team consist of four passionate junior software developers driven by a shared enthusiasm for finance and the stock market." +
-     "With a keen interest in making this sector more reliable for investors.";
+    const teamStatement = "Our team consists of five junior software developers with a shared passion for the world of finance and the stock market! " +
+     "We aim to create a more reliable source of information for everyday investors.";
 
     const productStatement = "Trademind AI is an AI-driven system for stock market prediction." + 
     "It uses advanced algorithms to analyze market trends, news sentiment, and economic indicators for accurate forecasts." + 
