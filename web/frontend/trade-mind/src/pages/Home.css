@@ -156,14 +156,25 @@
 }
 
 .home-page-info-block-title {
+    position: relative;
     font-size: 400%;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
     text-align: center;
+    text-decoration: none;
 }
+
+.home-page-info-block-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 2px;
+    background-color: #c8c5e0; 
+}
+
 
 .titleContainer {
     display: flex;
