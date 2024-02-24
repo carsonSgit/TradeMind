@@ -21,6 +21,25 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
+### Dataset
+
+For our dataset, we have decided on the [S&P 500 stock data](https://www.kaggle.com/datasets/camnugent/sandp500) created by [Cam Nugent](https://www.kaggle.com/camnugent)
+
+This dataset provides historical stock price data for companies listed on the S&P 500 index from 2013 to 2018. It includes information on the opening, highest, lowest, and closing prices of stocks, as well as trading volume, all denominated in USD. The dataset is available in both individual files for each stock and as a merged CSV file. Users can leverage various formats to conduct analyses such as visualizations, stock comparisons, and predictive modeling for informed trading decisions.
+
+### Data Attributes
+
+For the AI model, we'll utilize the following attributes/features from the dataset:
+
+1. Date (Temporal data)
+2. Open (Opening stock price)
+3. High (Highest price reached)
+4. Low (Lowest price reached)
+5. Close (Closing stock price)
+6. Volume (Number of shares traded)
+7. Name (Stock ticker)
+
+
 ### Key Features
 
 - **TBD...**
