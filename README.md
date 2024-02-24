@@ -3,11 +3,11 @@
 <br>
 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
 
-## About AI Launch Lab's R&D AI Program
+# About AI Launch Lab's R&D AI Program
 
 [Ai Launch Lab's R&D AI Program](https://launchlab.ai/) is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
 
-### The Program Roadmap
+## The Program Roadmap
 
 - **Weeks 1-6**: Weekly sessions covering diverse AI topics facilitated by AI specialists. Participants engage in quizzes and activities to reinforce learning. Concurrently, teams work on developing their projects under the guidance of mentors.
 
@@ -21,6 +21,8 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 # Project Overview
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
+
+See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing)
 
 ## Problem Identification and Scope
 
@@ -38,7 +40,7 @@ long term investments and growth as oppised to short term daily trading.
 
 Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&P 500 index. 
 
-We are going to use time series analysis to analyze the stock prices collected over time.
+We are going to use a non linear model such as gradiant boosting regression to analyze the stock prices collected over time.
 
 ### Success Criteria 
 

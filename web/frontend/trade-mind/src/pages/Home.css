@@ -156,13 +156,33 @@
 }
 
 .home-page-info-block-title {
+    position: relative;
     font-size: 400%;
-    font-weight: 300;
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    font-weight: 400;
+    font-style: oblique 1deg;
     text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-page-info-block-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 2px;
+    background-color: #c8c5e0;
+    transition: width 0.3s ease;
+}
+
+.home-page-info-block-title:hover {
+    color: #f5f4ff; 
+}
+
+.home-page-info-block-title:hover::after {
+    width: 100%; 
 }
 
 .titleContainer {
@@ -187,6 +207,9 @@
 }
   
 @media (max-width: 768px) {
+    .home-page-info-block-title::after{
+        width: 105%;
+    }
     .landingContainer {
         margin: auto;
         width: 100%;
