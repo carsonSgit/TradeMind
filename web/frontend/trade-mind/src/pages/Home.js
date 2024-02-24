@@ -1,5 +1,4 @@
 import './Home.css'
-import { useNavigate } from 'react-router-dom'
 import HomePageText from '../components/HomePageText';
 import HomePageImage from '../components/HomePageImage';
 
@@ -18,15 +17,13 @@ export default function Home() {
     const productStatement = "TradeMind is an AI-driven system engineered for stock market prediction. The goal for TradeMind is to allow people without the time " +
     "to study the stock market an opportunity to trade stocks with confidence. Our product has been trained on large quantities of data which allows it to accurately " + 
     "determine long term future stock prices. Thanks to our dedication as well as extensive training and testing, we have ensured you can put your full confidence in our product. "
-    
-    let navigate = useNavigate();
 
     return (
         <>
             <div className={"landingContainer"}>
                 <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet" />         
 
-                <img src="../hero.jpg"></img>
+                <img src="../hero.jpg" alt="Main Logo of TradeMind"></img>
                 <div className='titleContainer'>
                     <h1>TRADEMIND</h1>
                     <div className='buttonContainer'>
