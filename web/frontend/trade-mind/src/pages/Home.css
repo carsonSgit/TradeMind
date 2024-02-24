@@ -162,6 +162,7 @@
     font-style: oblique 1deg;
     text-align: center;
     text-decoration: none;
+    transition: color 0.3s ease; /* Adding transition for color change */
 }
 
 .home-page-info-block-title::after {
@@ -172,9 +173,17 @@
     transform: translateX(-50%);
     width: 120%;
     height: 2px;
-    background-color: #c8c5e0; 
+    background-color: #c8c5e0;
+    transition: width 0.3s ease;
 }
 
+.home-page-info-block-title:hover {
+    color: #f5f4ff; 
+}
+
+.home-page-info-block-title:hover::after {
+    width: 100%; 
+}
 
 .titleContainer {
     display: flex;
