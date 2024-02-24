@@ -44,7 +44,7 @@ We are going to use time series analysis to analyze the stock prices collected o
 
 **Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.
 
-**Back-End:**: Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
+**Back-End:** Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
 
 **AI Model**: Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
 
