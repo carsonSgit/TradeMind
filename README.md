@@ -28,19 +28,57 @@ TradeMind AI is a stock analytics AI designed to assist users in making informed
 
 Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don't have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can't afford. Our goal in creating TradeMind is to make stock trading more accessible to all.
 
-### Success Criteria
+### Target Audience
 
-### Front-End
+The core target audience for our stock analytics AI is primarily for those 
+who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for
+long term investments and growth as oppised to short term daily trading.
 
-A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.
+### Scope and Constraints
 
-### Back-End
+Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&P 500 index. 
 
-Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
+We are going to use time series analysis to analyze the stock prices collected over time.
 
-### AI Model
+### Success Criteria 
 
-Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
+**Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.
+
+**Back-End:**: Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
+
+**AI Model**: Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
+
+## Data Collection and Preparation
+
+### Dataset
+
+For our dataset, we have decided on the [S&P 500 stock data](https://www.kaggle.com/datasets/camnugent/sandp500) created by [Cam Nugent](https://www.kaggle.com/camnugent)
+
+This dataset provides historical stock price data for companies listed on the S&P 500 index from 2013 to 2018. It includes information on the opening, highest, lowest, and closing prices of stocks, as well as trading volume, all denominated in USD. The dataset is available in both individual files for each stock and as a merged CSV file. Users can leverage various formats to conduct analyses such as visualizations, stock comparisons, and predictive modeling for informed trading decisions.
+
+### Data Attributes
+
+For the AI model, we'll utilize the following attributes/features from the dataset:
+
+1. Date (Temporal data)
+2. Open (Opening stock price)
+3. High (Highest price reached)
+4. Low (Lowest price reached)
+5. Close (Closing stock price)
+6. Volume (Number of shares traded)
+7. Name (Stock ticker)
+
+### Data Cleaning
+
+- **Handling Missing Values:**
+We'll assess each column for missing data. If only a few values are missing, we'll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.
+
+- **Handling Outliers:**
+Outliers can arise from extreme market shifts, data collection errors, or corporate events. We'll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.
+
+- **Handling Inconsistencies:**
+We'll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.
+
 
 ## Getting Started
 
