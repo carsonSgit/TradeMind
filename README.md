@@ -21,6 +21,19 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
+### Target Audience
+
+The core target audience for our stock analytics AI is primarily for those 
+who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for
+long term investments and growth as oppised to short term daily trading.
+
+### Scope and Constraints
+
+Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&P 500 index. 
+
+We are going to use time series analysis to analyze the stock prices collected over time.
+
+
 ### Key Features
 
 - **TBD...**
