@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom'
 import './Home.css'
 import { useNavigate } from 'react-router-dom'
 import HomePageText from '../components/HomePageText';
 import HomePageImage from '../components/HomePageImage';
-import AboutPageImage from '../components/AboutPageImage';
 
 export default function Home() {
     const missionStatement = "At our core, we're driven by the belief that artificial intelligence can transform " +  
@@ -12,13 +10,15 @@ export default function Home() {
     "market, giving people the confidence and tools they need to thrive in the world of investing. Together, we're reshaping the future of finance, " + 
     "one prediction at a time.";
 
-    const teamStatement = "Our team consist of four passionate junior software developers driven by a shared enthusiasm for finance and the stock market." +
-     "With a keen interest in making this sector more reliable for investors.";
+    const teamStatement = "Our team consist of five passionate junior software developers driven by a shared enthusiasm for finance, artificial intelligence " +   
+    "and computer science. Thanks in large part to our unique combination of professional and academic experience we were able to create a product that can " +
+    "provide real value to anyone looking to invest their money in the stock market. As we move forward both with TradeMind and beyond each of us is eager " +
+    "to face new challenges and build new products that can provide real value to our users";
 
-    const productStatement = "Trademind AI is an AI-driven system for stock market prediction." + 
-    "It uses advanced algorithms to analyze market trends, news sentiment, and economic indicators for accurate forecasts." + 
-    "Key features include real-time analysis, risk assessment, customizable alerts, and performance tracking."
-
+    const productStatement = "TradeMind is an AI-driven system engineered for stock market prediction. The goal for TradeMind is to allow people without the time " +
+    "to study the stock market an opportunity to trade stocks with confidence. Our product has been trained on large quantities of data which allows it to accurately " + 
+    "determine long term future stock prices. Thanks to our dedication as well as extensive training and testing, we have ensured you can put your full confidence in our product. "
+    
     let navigate = useNavigate();
 
     return (
