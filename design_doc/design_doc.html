@@ -42,6 +42,12 @@
 <li>Volume (Number of shares traded)</li>
 <li>Name (Stock ticker)</li>
 </ol>
+<h3 id="data-cleaning">Data Cleaning</h3>
+<ul>
+<li><p><strong>Handling Missing Values:</strong> We’ll assess each column for missing data. If only a few values are missing, we’ll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.</p></li>
+<li><p><strong>Handling Outliers:</strong> Outliers can arise from extreme market shifts, data collection errors, or corporate events. We’ll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.</p></li>
+<li><p><strong>Handling Inconsistencies:</strong> We’ll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.</p></li>
+</ul>
 <h3 id="key-features">Key Features</h3>
 <ul>
 <li><strong>TBD…</strong></li>
