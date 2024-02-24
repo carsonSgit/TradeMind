@@ -198,6 +198,9 @@
 }
   
 @media (max-width: 768px) {
+    .home-page-info-block-title::after{
+        width: 105%;
+    }
     .landingContainer {
         margin: auto;
         width: 100%;
