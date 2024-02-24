@@ -26,13 +26,21 @@
 <li><p><strong>Week 8</strong>: Feedback session with AI educators and mentors on project progress. Participants engage in presentation rehearsals to prepare for the final showcase.</p></li>
 <li><p><strong>Week 9</strong>: Final presentations of AI projects at Dawson College on Friday, April 5, 2024. Certificates will be awarded based on project completion, attendance, and participation.</p></li>
 </ul>
-<h2 id="project-overview">Project Overview</h2>
+<h1 id="project-overview">Project Overview</h1>
 <p>TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.</p>
+<h2 id="problem-identification-and-scope">Problem Identification and Scope</h2>
+<h3 id="problem-definition">Problem Definition</h3>
+<p>Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don’t have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can’t afford. Our goal in creating TradeMind is to make stock trading more accessible to all.</p>
 <h3 id="target-audience">Target Audience</h3>
 <p>The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the “pot”. It should also be noted that this should be used for long term investments and growth as oppised to short term daily trading.</p>
 <h3 id="scope-and-constraints">Scope and Constraints</h3>
 <p>Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&amp;P 500 index.</p>
 <p>We are going to use time series analysis to analyze the stock prices collected over time.</p>
+<h3 id="success-criteria">Success Criteria</h3>
+<p><strong>Front-End:</strong> A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.</p>
+<p><strong>Back-End:</strong>: Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.</p>
+<p><strong>AI Model</strong>: Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD…</p>
+<h2 id="data-collection-and-preparation">Data Collection and Preparation</h2>
 <h3 id="dataset">Dataset</h3>
 <p>For our dataset, we have decided on the <a href="https://www.kaggle.com/datasets/camnugent/sandp500">S&amp;P 500 stock data</a> created by <a href="https://www.kaggle.com/camnugent">Cam Nugent</a></p>
 <p>This dataset provides historical stock price data for companies listed on the S&amp;P 500 index from 2013 to 2018. It includes information on the opening, highest, lowest, and closing prices of stocks, as well as trading volume, all denominated in USD. The dataset is available in both individual files for each stock and as a merged CSV file. Users can leverage various formats to conduct analyses such as visualizations, stock comparisons, and predictive modeling for informed trading decisions.</p>
@@ -52,10 +60,6 @@
 <li><p><strong>Handling Missing Values:</strong> We’ll assess each column for missing data. If only a few values are missing, we’ll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.</p></li>
 <li><p><strong>Handling Outliers:</strong> Outliers can arise from extreme market shifts, data collection errors, or corporate events. We’ll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.</p></li>
 <li><p><strong>Handling Inconsistencies:</strong> We’ll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.</p></li>
-</ul>
-<h3 id="key-features">Key Features</h3>
-<ul>
-<li><strong>TBD…</strong></li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <p>To get started with TradeMind AI, follow these steps:</p>
