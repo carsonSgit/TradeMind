@@ -1,3 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+import seaborn as sns
+import matplotlib.dates as mdates
+
 def get_training_data(df: pd.DataFrame, split_date: str = "2017-07-17") -> tuple[pd.DataFrame, pd.DataFrame]:
   """
   Splits a DataFrame into two based on a specified date.
