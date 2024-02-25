@@ -25,11 +25,12 @@ def get_training_data(df: pd.DataFrame, split_date: str = "2017-07-17") -> tuple
   
   return before_df, after_df
 
-def get_company_by_symbol(symbol: str) -> pd.DataFrame:
+def get_company_by_symbol(index_df: pd.DataFrame, symbol: str) -> pd.DataFrame:
   """
   Returns a DataFrame containing the stock history of the company symbol provided.
 
   Parameters:
+  - index_df: The DataFrame containing the index.
   - symbol: The symbol of the company.
 
   Returns:
