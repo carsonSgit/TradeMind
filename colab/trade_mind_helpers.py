@@ -36,7 +36,7 @@ def get_company_by_symbol(index_df: pd.DataFrame, symbol: str) -> pd.DataFrame:
   Returns:
   - A DataFrame of the companies stock history. 
   """
-  return INDEX[INDEX['Name'] == symbol.upper()]
+  return index_df[index_df['Name'] == symbol.upper()]
 
 def plot_df_time_series(
     dataframe: pd.DataFrame, 
