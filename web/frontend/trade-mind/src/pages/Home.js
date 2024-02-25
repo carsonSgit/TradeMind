@@ -12,7 +12,7 @@ export default function Home() {
     const teamStatement = "Our team consist of five passionate junior software developers driven by a shared enthusiasm for finance, artificial intelligence " +   
     "and computer science. Thanks in large part to our unique combination of professional and academic experience we were able to create a product that can " +
     "provide real value to anyone looking to invest their money in the stock market. As we move forward both with TradeMind and beyond each of us is eager " +
-    "to face new challenges and build new products that can provide real value to our users";
+    "to face new challenges and build new products that can provide real value to our users. ";
 
     const productStatement = "TradeMind is an AI-driven system engineered for stock market prediction. The goal for TradeMind is to allow people without the time " +
     "to study the stock market an opportunity to trade stocks with confidence. Our product has been trained on large quantities of data which allows it to accurately " + 
