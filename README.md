@@ -40,7 +40,7 @@ long term investments and growth as oppised to short term daily trading.
 
 Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&P 500 index. 
 
-We are going to use a non linear model such as gradiant boosting regression to analyze the stock prices collected over time.
+We are going to use a non linear model such as time series analysis to analyze the stock prices collected over time.
 
 ### Success Criteria 
 
