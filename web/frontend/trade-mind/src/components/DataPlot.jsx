@@ -21,7 +21,9 @@ class DataPlot extends React.Component {
                             autosize: true,
                             title: 'A Fancy Plot'
                         }
-                    }
+                    }               
+                    style={{ width: '100%', height: '100%' }}
+                    useResizeHandler={true}
                 />
             </div>
         );
