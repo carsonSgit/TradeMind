@@ -19,6 +19,7 @@ class DataPlot extends React.Component {
                     layout={
                         {
                             autosize: true,
+                            margin: { t: 50, b: 50, l: 50, r: 50 },
                             title: 'A Fancy Plot'
                         }
                     }               
