@@ -2,21 +2,47 @@
     font-size: 70px;
     font-weight: bold;
     font-family: 'Norwester', sans-serif;
-    color: #443a90;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 45px;
+    animation: color-transition 5s linear infinite alternate;
+    color: #443a90;
 }
 
+@keyframes color-transition {
+    0% {
+        color: #443a90;
+    }
+    50% {
+        color: #ada7d3;
+    }
+    100% {
+        color: #443a90;
+    }
+}
+
+
+/* Spice up the text */
 .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 25px;
+    margin: 25vh 10vw;
     padding: 20px;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #d2d0d08b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 
+/* Hover effect for text */
+.text:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Media Query for smaller screens */
 @media(max-width: 768px) {
     .analytics-title {
         font-size: 30px;
