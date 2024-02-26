@@ -4,52 +4,39 @@
     font-family: 'Norwester', sans-serif;
     text-align: center;
     margin-top: 45px;
-    animation: color-transition 5s linear infinite alternate;
-    color: #443a90;
+    color: #443a90;    
+    position: relative;
+    transition: 0.4s ease;
 }
 
-@keyframes color-transition {
-    0% {
-        color: #443a90;
-    }
-    50% {
-        color: #ada7d3;
-    }
-    100% {
-        color: #443a90;
-    }
-}
-
-
-/* Spice up the text */
-.text {
+.analytics-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 25vh 10vw;
+    margin: 4%;
+    margin-top: 1%;
     padding: 20px;
-    font-size: 24px;
-    background: #d2d0d08b;
+    font-size: 22px;
+    background: linear-gradient(-1deg,rgba(153, 102, 255, 0.1), rgba(170, 128, 255, 0.05));
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
+    color: #3d3b48; 
 }
 
-/* Hover effect for text */
-.text:hover {
+.analytics-text:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-/* Media Query for smaller screens */
 @media(max-width: 768px) {
     .analytics-title {
-        font-size: 30px;
+        font-size: 50px;
         margin-top: 30px;
     }
-    .text {
-        font-size: 18px;
-        margin: 0 !important;
-    }
+    .analytics-text {
+        font-size: 21px; 
+        margin: 4%;
+        margin-bottom: 6%;
+    } 
 }
