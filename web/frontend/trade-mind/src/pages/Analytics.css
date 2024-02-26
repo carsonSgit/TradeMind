@@ -1,0 +1,29 @@
+.analytics-title {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Norwester', sans-serif;
+    color: #443a90;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    padding: 20px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width: 768px) {
+    .analytics-title {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .text {
+        font-size: 18px;
+        margin: 0 !important;
+    }
+}
