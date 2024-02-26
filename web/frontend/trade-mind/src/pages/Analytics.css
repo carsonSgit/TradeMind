@@ -1,0 +1,46 @@
+/* Analytics Title */
+.analytics-title {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Norwester', sans-serif;
+    text-align: center;
+    margin-top: 45px;
+    color: #443a90;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+/* Analytics Text */
+.analytics-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4%;
+    margin-top: 1%;
+    padding: 20px;
+    font-size: 22px;
+    background: linear-gradient(-1deg, rgba(153, 102, 255, 0.1), rgba(170, 128, 255, 0.05));
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.4s ease;
+    color: #3d3b48;
+}
+
+/* Hover Effect */
+.analytics-text:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .analytics-title {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .analytics-text {
+        font-size: 21px;
+        margin: 4%;
+        margin-bottom: 6%;
+    }
+}
