@@ -1,4 +1,4 @@
-import './About.css';
+import '../styles/About.css';
 import AboutPageImage from "../components/AboutPageImage";
 import AboutPageText from "../components/AboutPageText";
 

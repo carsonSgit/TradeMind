@@ -1,4 +1,4 @@
-import './Home.css'
+import '../styles/Home.css'
 import HomePageText from '../components/HomePageText';
 import HomePageImage from '../components/HomePageImage';
 

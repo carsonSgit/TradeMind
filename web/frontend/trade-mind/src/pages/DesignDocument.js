@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./Loading.css"
+import "../styles/Loading.css"
 import Loading from '../components/Loading';
 
 export default function DesignDocument() {

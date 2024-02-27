@@ -1,5 +1,5 @@
 import DataPlot from "../components/DataPlot";
-import './Analytics.css';
+import '../styles/Analytics.css';
 
 export default function Analytics() {
     return (
