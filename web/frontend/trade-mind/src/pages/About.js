@@ -22,9 +22,10 @@ export default function About() {
     const kevinGithub = "https://github.com/kbaggott1";
     const kevinEmail = "kevin.baggott1@gmail.com";
 
-    const carsonSummary = "Hi, my name is Carson! I'm currently a 3rd year computer science student with a focus on software development! " + 
-    "My first experience with coding was an extra-curricular program at the YMCA for a Web Programming course back in 2018. Having not been a big fan of school, I was really surprised at how much I enjoyed taking that course. " + 
-    "Hobby-wise, I spend most of my free time either listening to music or working out.";
+    const carsonSummary = "Hi, my name is Carson! I'm currently a third year Computer Science student with a focus on software development! " + 
+    "My first experience with coding was through an extra-curricular Web Programming course I took at my local YMCA back in 2018. That course was what ignited my love for this field. " + 
+    "When you spend a lot of time coding, it's important to have something to keep you relaxed and for me, that's listening to music! " + 
+    "In my free time, I like to work out, play some games with friends, and watch movies.";
     const carsonPortfolio = "https://carsonsgit.github.io/";
     const carsonLinkedIn = "https://www.linkedin.com/in/carson-spriggs-audet-609372217/"
     const carsonGithub = "https://github.com/carsonSgit";
@@ -39,8 +40,8 @@ export default function About() {
     const cindyEmail = "cindycoulibaly10@gmail.com";
 
     const felixSummary = "I'm a junior game developer with a keen interest in AI currently in my third year at LaSalle College." + 
-    " My interest in coding is due to all the time i spent as a child playing on computers!" + 
-    " My hobbies include but are not limited to taking care of plants and playing games.";
+    " My interest in coding is stems from all the time I spent as a child playing on computers!" + 
+    " My hobbies include, but are not limited to, taking care of plants in my garden, playing games, and listening to all kinds of music.";
     const felixPortfolio = "https://github.com/Felixs123";
     const felixLinkedIn = "https://www.linkedin.com/in/felix-st-laurent-816aa12b3/"
     const felixGithub = "https://github.com/Felixs123";
@@ -57,7 +58,7 @@ export default function About() {
             <AboutPageText textContent={cristianoSummary} nameContent="Cristiano Fazi" side="left" site={cristianoPortfolio} github={cristianoGithub} linkdin={cristianoLinkedIn} email={cristianoEmail}/>
           </div>
           <div className="row">
-            <AboutPageImage imageUrl="../about/carsonspriggs.jpg" side="right" />
+            <AboutPageImage imageUrl="../about/carsonspriggs.png" side="right" />
             <AboutPageText textContent={carsonSummary} nameContent="Carson Spriggs" side="right" site={carsonPortfolio} github={carsonGithub} linkdin={carsonLinkedIn} email={carsonEmail}/>
           </div>
           <div className="row">
