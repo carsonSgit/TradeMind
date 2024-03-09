@@ -16,8 +16,13 @@
   <link rel="stylesheet" href="design_doc.css" />
 </head>
 <body>
-<p><img src="https://github.com/carsonSgit/TradeMind/assets/93663166/b2fe34e3-07f1-4f47-872c-a0cf0b1a0c7b" alt="TradeMind AI Logo" width="800" /> <br> <br> Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab’s R&amp;D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.</p>
-<h1 id="about-ai-launch-labs-rd-ai-program">About AI Launch Lab’s R&amp;D AI Program</h1>
+<img src="https://github.com/carsonSgit/TradeMind/assets/93663166/b2fe34e3-07f1-4f47-872c-a0cf0b1a0c7b" alt="TradeMind AI Logo" width="800" /> <br> <br>
+<hr>
+<p>👋 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab’s R&amp;D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain. <br></p>
+<blockquote>
+<p>[!IMPORTANT] TradeMind AI is designed to provide insightful analysis and predictions in the stock market domain. Please read through the documentation thoroughly to understand its functionalities and limitations.</p>
+</blockquote>
+<h1 id="about-ai-launch-labs-rd-ai-program">🎓 About AI Launch Lab’s R&amp;D AI Program</h1>
 <p><a href="https://launchlab.ai/">Ai Launch Lab’s R&amp;D AI Program</a> is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.</p>
 <h2 id="the-program-roadmap">The Program Roadmap</h2>
 <ul>
@@ -28,24 +33,30 @@
 </ul>
 <h1 id="project-overview">Project Overview</h1>
 <p>TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.</p>
+<blockquote>
+<p>[!TIP] Utilize TradeMind AI as a supplementary tool to your existing research and analysis. While it offers valuable insights, always consider multiple sources of information before making trading decisions.</p>
+</blockquote>
 <p>See our <a href="https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing">colab notebook</a></p>
 <h2 id="problem-identification-and-scope">Problem Identification and Scope</h2>
-<h3 id="problem-definition">Problem Definition</h3>
+<h3 id="chart_with_upwards_trend-problem-definition">:chart_with_upwards_trend: Problem Definition</h3>
 <p>Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don’t have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can’t afford. Our goal in creating TradeMind is to make stock trading more accessible to all.</p>
-<h3 id="target-audience">Target Audience</h3>
-<p>The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the “pot”. It should also be noted that this should be used for long term investments and growth as oppised to short term daily trading.</p>
-<h3 id="scope-and-constraints">Scope and Constraints</h3>
-<p>Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&amp;P 500 index.</p>
-<p>We are going to use a non linear model such as time series analysis to analyze the stock prices collected over time.</p>
-<h3 id="success-criteria">Success Criteria</h3>
-<p><strong>Front-End:</strong> A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.</p>
-<p><strong>Back-End:</strong> Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.</p>
-<p><strong>AI Model</strong>: Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD…</p>
+<h3 id="earth_americas-target-audience">:earth_americas: Target Audience</h3>
+<p>The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the “pot”. It should also be noted that this should be used for long term investments and growth as opposed to short term daily trading.</p>
+<blockquote>
+<p>[!WARNING] Remember that past performance is not indicative of future results. Use TradeMind AI as a tool to complement your investment strategy, but be aware of potential risks associated with stock market trading.</p>
+</blockquote>
+<h3 id="scope-and-constraints">📋 Scope and Constraints</h3>
+<p>Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume, and name of companies that make up the S&amp;P 500 index.</p>
+<p>We are going to use a non-linear model such as time series analysis to analyze the stock prices collected over time.</p>
+<h3 id="success-criteria">🏆 Success Criteria</h3>
+<p><strong>Front-End:</strong> A working front-end website that is hosted online. The site should have four pages, home, about, design, and analytics. The page should be visually appealing, user-friendly, and interactive. Users should be able to access the AI service easily.</p>
+<p><strong>Back-End:</strong> API should expose endpoints that provide all necessary information and services required by the front-end. The API should allow the front-end to perform interactions and queries with the AI model.</p>
+<p><strong>AI Model</strong>: The model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD…</p>
 <h2 id="data-collection-and-preparation">Data Collection and Preparation</h2>
-<h3 id="dataset">Dataset</h3>
+<h3 id="dataset">📊 Dataset</h3>
 <p>For our dataset, we have decided on the <a href="https://www.kaggle.com/datasets/camnugent/sandp500">S&amp;P 500 stock data</a> created by <a href="https://www.kaggle.com/camnugent">Cam Nugent</a></p>
 <p>This dataset provides historical stock price data for companies listed on the S&amp;P 500 index from 2013 to 2018. It includes information on the opening, highest, lowest, and closing prices of stocks, as well as trading volume, all denominated in USD. The dataset is available in both individual files for each stock and as a merged CSV file. Users can leverage various formats to conduct analyses such as visualizations, stock comparisons, and predictive modeling for informed trading decisions.</p>
-<h3 id="data-attributes">Data Attributes</h3>
+<h3 id="data-attributes">📝 Data Attributes</h3>
 <p>For the AI model, we’ll utilize the following attributes/features from the dataset:</p>
 <ol type="1">
 <li>Date (Temporal data)</li>
@@ -56,18 +67,20 @@
 <li>Volume (Number of shares traded)</li>
 <li>Name (Stock ticker)</li>
 </ol>
-<h3 id="data-cleaning">Data Cleaning</h3>
+<h3 id="data-cleaning">🧹 Data Cleaning</h3>
 <ul>
 <li><p><strong>Handling Missing Values:</strong> We’ll assess each column for missing data. If only a few values are missing, we’ll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.</p></li>
 <li><p><strong>Handling Outliers:</strong> Outliers can arise from extreme market shifts, data collection errors, or corporate events. We’ll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.</p></li>
 <li><p><strong>Handling Inconsistencies:</strong> We’ll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.</p></li>
 </ul>
-<h2 id="getting-started">Getting Started</h2>
+<h2 id="getting-started">🚀 Getting Started</h2>
 <p>To get started with TradeMind AI, follow these steps:</p>
-<ol type="1">
-<li><strong>Clone the Repository</strong>: Clone this repository to your local machine using <code>git clone https://github.com/carsonSgit/TradeMind</code>.</li>
-<li><strong>TBD…</strong></li>
-<li>t</li>
-</ol>
+<ul>
+<li><strong>Head to our website</strong>: Our hosted <a href="https://trademind.pages.dev/">website</a> houses functionality for our AI, to find it, navigate to the “Analytics” page!</li>
+</ul>
+<p><strong>OR</strong></p>
+<ul>
+<li><strong>Use our Colab Notebook</strong>: Dive into the provided Jupyter <a href="https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing">notebook</a> to explore data preprocessing, visualization, and initial modeling.</li>
+</ul>
 </body>
 </html>
