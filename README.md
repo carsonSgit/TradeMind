@@ -1,9 +1,15 @@
 <img src="https://github.com/carsonSgit/TradeMind/assets/93663166/b2fe34e3-07f1-4f47-872c-a0cf0b1a0c7b" alt="TradeMind AI Logo" width="800" /> 
 <br>
 <br>
-Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
+<hr>
 
-# About AI Launch Lab's R&D AI Program
+👋 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
+<br>
+
+> [!IMPORTANT]
+> TradeMind AI is designed to provide insightful analysis and predictions in the stock market domain. Please read through the documentation thoroughly to understand its functionalities and limitations.
+
+# 🎓 About AI Launch Lab's R&D AI Program
 
 [Ai Launch Lab's R&D AI Program](https://launchlab.ai/) is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
 
@@ -17,48 +23,51 @@ Welcome to TradeMind AI - your intelligent stock analytics companion! This repos
 
 - **Week 9**: Final presentations of AI projects at Dawson College on Friday, April 5, 2024. Certificates will be awarded based on project completion, attendance, and participation.
 
-
 # Project Overview
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
+
+> [!TIP]
+> Utilize TradeMind AI as a supplementary tool to your existing research and analysis. While it offers valuable insights, always consider multiple sources of information before making trading decisions.
 
 See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing)
 
 ## Problem Identification and Scope
 
-### Problem Definition
+### :chart_with_upwards_trend: Problem Definition
 
 Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don't have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can't afford. Our goal in creating TradeMind is to make stock trading more accessible to all.
 
-### Target Audience
+### :earth_americas: Target Audience
 
-The core target audience for our stock analytics AI is primarily for those 
-who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for
-long term investments and growth as oppised to short term daily trading.
+The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for long term investments and growth as opposed to short term daily trading.
 
-### Scope and Constraints
+> [!WARNING]
+> Remember that past performance is not indicative of future results. Use TradeMind AI as a tool to complement your investment strategy, but be aware of potential risks associated with stock market trading.
 
-Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume and name of companies that make up the S&P 500 index. 
+### 📋 Scope and Constraints
 
-We are going to use a non linear model such as time series analysis to analyze the stock prices collected over time.
+Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume, and name of companies that make up the S&P 500 index. 
 
-### Success Criteria 
+We are going to use a non-linear model such as time series analysis to analyze the stock prices collected over time.
 
-**Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, design and analytics. The page should be visually appealing, user friendly and interactive. User should be able to access the AI service easily.
+### 🏆 Success Criteria 
 
-**Back-End:** Api should expose endpoints that provide all necessary information and services and required by the front-end. Api should allow the front-end to perform interactions and queries with the AI model.
+**Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, design, and analytics. The page should be visually appealing, user-friendly, and interactive. Users should be able to access the AI service easily.
 
-**AI Model**: Model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
+**Back-End:** API should expose endpoints that provide all necessary information and services required by the front-end. The API should allow the front-end to perform interactions and queries with the AI model.
+
+**AI Model**: The model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
 
 ## Data Collection and Preparation
 
-### Dataset
+### 📊 Dataset
 
 For our dataset, we have decided on the [S&P 500 stock data](https://www.kaggle.com/datasets/camnugent/sandp500) created by [Cam Nugent](https://www.kaggle.com/camnugent)
 
 This dataset provides historical stock price data for companies listed on the S&P 500 index from 2013 to 2018. It includes information on the opening, highest, lowest, and closing prices of stocks, as well as trading volume, all denominated in USD. The dataset is available in both individual files for each stock and as a merged CSV file. Users can leverage various formats to conduct analyses such as visualizations, stock comparisons, and predictive modeling for informed trading decisions.
 
-### Data Attributes
+### 📝 Data Attributes
 
 For the AI model, we'll utilize the following attributes/features from the dataset:
 
@@ -70,7 +79,7 @@ For the AI model, we'll utilize the following attributes/features from the datas
 6. Volume (Number of shares traded)
 7. Name (Stock ticker)
 
-### Data Cleaning
+### 🧹 Data Cleaning
 
 - **Handling Missing Values:**
 We'll assess each column for missing data. If only a few values are missing, we'll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.
@@ -81,11 +90,12 @@ Outliers can arise from extreme market shifts, data collection errors, or corpor
 - **Handling Inconsistencies:**
 We'll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.
 
-
-## Getting Started
+## 🚀 Getting Started
 
 To get started with TradeMind AI, follow these steps:
 
-1. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/carsonSgit/TradeMind`.
-2. **TBD...**
-3. t
+- **Head to our website**: Our hosted [website](https://trademind.pages.dev/) houses functionality for our AI, to find it, navigate to the "Analytics" page!
+
+**OR** 
+
+- **Use our Colab Notebook**: Dive into the provided Jupyter [notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing) to explore data preprocessing, visualization, and initial modeling. 
