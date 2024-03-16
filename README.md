@@ -34,11 +34,11 @@ See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwg
 
 ## Problem Identification and Scope
 
-### :chart_with_upwards_trend: Problem Definition
+### 📈 Problem Definition
 
 Trading stocks can difficult, stressful and financially dangerous. It can be very difficult for individuals who don't have much free time to trade stocks. Watching the market, even when it only applies to long term investments, can require a large amount of time and focus that most people can't afford. Our goal in creating TradeMind is to make stock trading more accessible to all.
 
-### :earth_americas: Target Audience
+### 🌎 Target Audience
 
 The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for long term investments and growth as opposed to short term daily trading.
 
