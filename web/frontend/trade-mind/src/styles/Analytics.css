@@ -1,6 +1,6 @@
 /* Analytics Title */
 .analytics-title {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     font-family: 'Norwester', sans-serif;
     text-align: center;
@@ -8,6 +8,17 @@
     color: #443a90;
     position: relative;
     transition: 0.4s ease;
+}
+
+.analytics-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analytics-content-container h1{
+    font-size: 50px;
+    color: #443a90;
 }
 
 /* Analytics Text */
