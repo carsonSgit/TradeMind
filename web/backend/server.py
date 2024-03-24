@@ -34,8 +34,9 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 origins = [
-    "http://localhost:3000",  
-    "https://trademind.pages.dev/"
+    "*"
+    # "http://localhost:3000",  
+    # "https://trademind.pages.dev/"
 ]
 
 app.add_middleware(
