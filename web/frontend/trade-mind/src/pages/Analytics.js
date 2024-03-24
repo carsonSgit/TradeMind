@@ -9,7 +9,7 @@ export default function Analytics() {
     useEffect(() => {
         const fetchSymbols = async () => {
             try {
-                const response = await fetch('http://localhost:8000/symbols');
+                const response = await fetch('https://trademind.onrender.com/symbols/');
                 const data = await response.json();
                 setSymbols(data);
             } catch (error) {
