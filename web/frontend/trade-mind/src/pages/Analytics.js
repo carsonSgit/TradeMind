@@ -9,7 +9,7 @@ export default function Analytics() {
     useEffect(() => {
         const fetchSymbols = async () => {
             try {
-                const response = await fetch('https://trademind.onrender.com/symbols/');
+                const response = await fetch('https://trademind.onrender.com/symbols/', { mode: 'cors' });
                 const data = await response.json();
                 setSymbols(data);
             } catch (error) {
