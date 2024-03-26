@@ -41,8 +41,8 @@ export default function Analytics() {
             const response = await fetch(`https://trademind.onrender.com/predict/${selectedSymbol}/${years}`, { mode: 'cors' });
             const data = await response.json();
             
-            if(data) {
-               setPredictions(data); 
+            if(response.ok && data && Object.keys(data).length > 0) {
+                setPredictions(data); 
             }
 
         } catch (error) {
