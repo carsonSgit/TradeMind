@@ -16,7 +16,7 @@ export default function Analytics() {
         const fetchSymbols = async () => {
             try {
                 // const response = await fetch('https://trademind.onrender.com/symbols/', { mode: 'cors' });
-                const response = await fetch('http://127.0.0.1:8000/symbols/', { mode: 'cors' });
+                const response = await fetch('https://trademind.onrender.com/symbols/', { mode: 'cors' });
                 const data = await response.json();
                 setSymbols(data);
                 handlePredictClick();
@@ -38,7 +38,7 @@ export default function Analytics() {
             if(!selectedSymbol)
                 return; 
 
-            const response = await fetch(`http://127.0.0.1:8000/predict/${selectedSymbol}/${years}`, { mode: 'cors' });
+            const response = await fetch(`https://trademind.onrender.com/predict/${selectedSymbol}/${years}`, { mode: 'cors' });
             const data = await response.json();
             
             if(data) {
