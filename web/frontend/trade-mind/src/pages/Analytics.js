@@ -2,16 +2,24 @@ import { useEffect, useState } from "react";
 import DataPlot from "../components/DataPlot";
 import StockSymbolSelector from "../components/StockSymbolSelector";
 import '../styles/Analytics.css';
+import "../styles/Loading.css"
+import Loading from '../components/Loading';
 
 export default function Analytics() {
     const [symbols, setSymbols] = useState([]);
-    
+    const [selectedSymbol, setSelectedSymbol] = useState('AAPL');
+    const [years, setYears] = useState(1);
+    const [predictions, setPredictions] = useState(null);
+    const [historicalData, setHistoricalData] = useState(null);
+
     useEffect(() => {
         const fetchSymbols = async () => {
             try {
-                const response = await fetch('https://trademind.onrender.com/symbols/', { mode: 'cors' });
+                // const response = await fetch('https://trademind.onrender.com/symbols/', { mode: 'cors' });
+                const response = await fetch('http://127.0.0.1:8000/symbols/', { mode: 'cors' });
                 const data = await response.json();
                 setSymbols(data);
+                handlePredictClick();
             } catch (error) {
                 console.error('Error:', error);
             }
@@ -20,13 +28,51 @@ export default function Analytics() {
         fetchSymbols();
     }, []);
 
+    const handleYearsChange = (event) => {  // Add a handler for the years select
+        setYears(event.target.value);
+    };
+
+    const handlePredictClick = async () => {  // New function to handle the Predict button click
+        try {
+
+            if(!selectedSymbol)
+                return; 
+
+            const response = await fetch(`http://127.0.0.1:8000/predict/${selectedSymbol}/${years}`, { mode: 'cors' });
+            const data = await response.json();
+            
+            if(data) {
+               setPredictions(data); 
+            }
+
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
     return (
         <div className="analytics-content-container">
             <div className="symbol-selector-container">
                 <h1>Select a Stock Symbol</h1>
-                <StockSymbolSelector symbols={symbols}/>
+                <StockSymbolSelector symbols={symbols} setSelectedSymbol={setSelectedSymbol}/>
+                <h2>Select Number of Years to Look Ahead</h2>
+                <input 
+                    type="range" 
+                    min="1" 
+                    max="5" 
+                    value={years} 
+                    onChange={handleYearsChange}
+                />
+                <p>Selected years: {years}</p>
+                <button onClick={handlePredictClick} className="predict-button">Predict</button>
             </div>
-            <DataPlot />
+            { predictions ?
+            <div className="plot-container">
+                <DataPlot predictedData={predictions} selectedSymbol={selectedSymbol} /> 
+            </div>
+            :
+            <Loading style={{marginTop: '100px', marginBottom: '100px'}} />
+            }
             <div className='analytics-title'> Analytics </div>
             <div className='analytics-text'>
                 <p>
