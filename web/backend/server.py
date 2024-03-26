@@ -6,6 +6,7 @@ import pandas as pd
 import pathlib
 from contextlib import asynccontextmanager
 import json
+from model_trainer import ModelTrainer
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -55,3 +56,9 @@ def read_root():
 async def get_all_symbols():
     symbols = pd.unique(INDEX["Name"]).tolist()
     return JSONResponse(content=symbols)
+
+@app.get('/predict/{symbol}/{years}')
+async def predict(symbol: str, years: int):
+    model_trainer = ModelTrainer("../../colab/all_stocks_5yr.csv")
+    prediction = model_trainer(symbol, years)
+    return prediction
