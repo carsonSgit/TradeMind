@@ -73,6 +73,7 @@ export default function Analytics() {
             :
             <Loading style={{marginTop: '100px', marginBottom: '100px'}} />
             }
+            
             <div className='analytics-title'> Analytics </div>
             <div className='analytics-text'>
                 <p>
