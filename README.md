@@ -8,21 +8,7 @@
 
 > TradeMind AI is designed to provide insightful analysis and predictions in the stock market domain. Please read through the documentation thoroughly to understand its functionalities and limitations.
 
-# 🎓 About AI Launch Lab's R&D AI Program
-
-[Ai Launch Lab's R&D AI Program](https://launchlab.ai/) is a comprehensive learning experience designed to equip participants with a deep understanding of various AI concepts while providing hands-on project development opportunities. Throughout the program, participants engage in weekly sessions, quizzes, and activities led by AI specialists. The program culminates in the development and presentation of team projects, offering participants the chance to apply their newfound knowledge and skills.
-
-## The Program Roadmap
-
-- **Weeks 1-6**: Weekly sessions covering diverse AI topics facilitated by AI specialists. Participants engage in quizzes and activities to reinforce learning. Concurrently, teams work on developing their projects under the guidance of mentors.
-
-- **Week 7**: Data Challenge at Dawson College, scheduled from March 22 to 24, 2024. All cohort participants are encouraged to participate in this hands-on challenge.
-
-- **Week 8**: Feedback session with AI educators and mentors on project progress. Participants engage in presentation rehearsals to prepare for the final showcase.
-
-- **Week 9**: Final presentations of AI projects at Dawson College on Friday, April 5, 2024. Certificates will be awarded based on project completion, attendance, and participation.
-
-# Project Overview
+# 🎓 Project Overview
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
@@ -44,17 +30,15 @@ The core target audience for our stock analytics AI is primarily for those who a
 
 ### 📋 Scope and Constraints
 
-Our tool will be trained based on date, open price, highest price, lowest price, closing price, volume, and name of companies that make up the S&P 500 index. 
-
-We are going to use a non-linear model such as time series analysis to analyze the stock prices collected over time.
+Our AI tool will analyze the closing data of each stock within the S&P 500 index. From this, it will be able to make long term predictions regarding the future of the stock so that the user has a helpful guide for their investments.
 
 ### 🏆 Success Criteria 
 
-**Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, design, and analytics. The page should be visually appealing, user-friendly, and interactive. Users should be able to access the AI service easily.
+**Front-End:** A working front-end website that is hosted online. The site should have four pages, home, about, roadmap, and analytics. The page should be visually appealing, user-friendly, and interactive. Users should be able to access the AI service easily.
 
 **Back-End:** API should expose endpoints that provide all necessary information and services required by the front-end. The API should allow the front-end to perform interactions and queries with the AI model.
 
-**AI Model**: The model should be trained sufficiently enough that it can reliably predict stock prices for at least three hundred companies. Accuracy testing methods TBD...
+**AI Model**: The model should be trained sufficiently enough that it can reliably predict stock prices for all present indices in our stock index selection.
 
 ## Data Collection and Preparation
 
@@ -66,7 +50,7 @@ This dataset provides historical stock price data for companies listed on the S&
 
 ### 📝 Data Attributes
 
-For the AI model, we'll utilize the following attributes/features from the dataset:
+Through the dataset, we are provided with the following data attributes:
 
 1. Date (Temporal data)
 2. Open (Opening stock price)
@@ -75,17 +59,6 @@ For the AI model, we'll utilize the following attributes/features from the datas
 5. Close (Closing stock price)
 6. Volume (Number of shares traded)
 7. Name (Stock ticker)
-
-### 🧹 Data Cleaning
-
-- **Handling Missing Values:**
-We'll assess each column for missing data. If only a few values are missing, we'll consider filling them with mean/median values or using interpolation. For significant missing data, we may opt to drop those rows or impute values based on other features.
-
-- **Handling Outliers:**
-Outliers can arise from extreme market shifts, data collection errors, or corporate events. We'll visualize the data distribution and employ statistical techniques like Z-score or Interquartile Range (IQR) to detect outliers. Depending on the situation, we may cap extreme values or remove them from the dataset.
-
-- **Handling Inconsistencies:**
-We'll scrutinize the data for inconsistencies like irregular date formats, negative stock prices (if not feasible), or implausible values in other columns. Any inconsistencies found will be rectified or eliminated as necessary.
 
 ## 🚀 Getting Started
 
