@@ -6,7 +6,6 @@
 👋 Welcome to TradeMind AI - your intelligent stock analytics companion! This repository contains the codebase for TradeMind AI, a project developed as part of the AI Launch Lab's R&D AI Program. TradeMind AI leverages artificial intelligence techniques to provide insightful analysis and predictions in the stock market domain.
 <br>
 
-> [!IMPORTANT]
 > TradeMind AI is designed to provide insightful analysis and predictions in the stock market domain. Please read through the documentation thoroughly to understand its functionalities and limitations.
 
 # 🎓 About AI Launch Lab's R&D AI Program
@@ -27,7 +26,6 @@
 
 TradeMind AI is a stock analytics AI designed to assist users in making informed decisions in the stock market. Leveraging cutting-edge AI techniques, TradeMind AI provides insightful analysis, predictions, and recommendations, empowering users to navigate the complexities of stock trading with confidence.
 
-> [!TIP]
 > Utilize TradeMind AI as a supplementary tool to your existing research and analysis. While it offers valuable insights, always consider multiple sources of information before making trading decisions.
 
 See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing)
@@ -42,7 +40,6 @@ Trading stocks can difficult, stressful and financially dangerous. It can be ver
 
 The core target audience for our stock analytics AI is primarily for those who are interested in investing and want a second opinion before putting money into the "pot". It should also be noted that this should be used for long term investments and growth as opposed to short term daily trading.
 
-> [!WARNING]
 > Remember that past performance is not indicative of future results. Use TradeMind AI as a tool to complement your investment strategy, but be aware of potential risks associated with stock market trading.
 
 ### 📋 Scope and Constraints
