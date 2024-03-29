@@ -48,10 +48,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
 @app.get('/symbols/')
 async def get_all_symbols():
     symbols = pd.unique(INDEX["Name"]).tolist()
