@@ -14,7 +14,7 @@ const DataPlot = ({ predictedData, selectedSymbol }) => {
 
     return (
         <Plot
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "100%", height: "135%" }}
             data={[
                 {
                     x: historicalX,
@@ -34,11 +34,11 @@ const DataPlot = ({ predictedData, selectedSymbol }) => {
                 }
             ]}
             layout={{
-                title: `${selectedSymbol} Historical and Predicted Stock Prices`,
+                title: `${selectedSymbol} Predicted Stock Prices`,
                 xaxis: { title: 'Days Since Start' },
                 yaxis: { title: 'Average Closing Price' },
                 legend: { orientation: 'h' },
-                margin: { l: 50, r: 50, t: 50, b: 50 }, // Adjust left, right, top, bottom margins as needed
+                margin: { l: 50, r: 50, t: 90, b: 50 }, // Adjust left, right, top, bottom margins as needed
                 autosize: true // This ensures that the plot will fill the container
             }}
         />

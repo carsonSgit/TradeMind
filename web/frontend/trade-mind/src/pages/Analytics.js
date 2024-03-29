@@ -10,7 +10,7 @@ export default function Analytics() {
     const [selectedSymbol, setSelectedSymbol] = useState('AAPL');
     const [years, setYears] = useState(1);
     const [predictions, setPredictions] = useState(null);
-    const [historicalData, setHistoricalData] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const fetchSymbols = async () => {
@@ -34,7 +34,7 @@ export default function Analytics() {
 
     const handlePredictClick = async () => {  // New function to handle the Predict button click
         try {
-
+            setIsLoading(true);
             if(!selectedSymbol)
                 return; 
 
@@ -48,25 +48,50 @@ export default function Analytics() {
         } catch (error) {
             console.error('Error:', error);
         }
+        finally {
+            setIsLoading(false);
+        }
     };
 
     return (
         <div className="analytics-content-container">
+            <h1>Select a Stock Symbol</h1>
             <div className="symbol-selector-container">
-                <h1>Select a Stock Symbol</h1>
-                <StockSymbolSelector symbols={symbols} setSelectedSymbol={setSelectedSymbol}/>
-                <h2>Select Number of Years to Look Ahead</h2>
-                <input 
-                    type="range" 
-                    min="1" 
-                    max="5" 
-                    value={years} 
-                    onChange={handleYearsChange}
-                />
-                <p>Selected years: {years}</p>
-                <button onClick={handlePredictClick} className="predict-button">Predict</button>
+                <div className="for-mobile">
+                    <div className="symbol-input-container">
+                        <StockSymbolSelector symbols={symbols} setSelectedSymbol={setSelectedSymbol}/>
+                    </div>
+                    <div className="symbol-input-container">
+                        <div class="radio-input">
+                        <label>
+                            <input value="1" name="value-radio" id="value-1" type="radio" onChange={handleYearsChange} />
+                            <span>1</span>
+                            </label>
+                            <label>
+                                <input value="2" name="value-radio" id="value-2" type="radio" onChange={handleYearsChange} />
+                            <span>2</span>
+                            </label>
+                            <label>
+                                <input value="3" name="value-radio" id="value-3" type="radio" onChange={handleYearsChange} />
+                            <span>3</span>
+                            </label>
+                            <label>
+                                <input value="4" name="value-radio" id="value-4" type="radio" onChange={handleYearsChange} />
+                            <span>4</span>
+                            </label>
+                            <label>
+                                <input value="5" name="value-radio" id="value-5" type="radio" onChange={handleYearsChange} />
+                            <span>5</span>
+                            </label>
+                            <span class="selection"></span>
+                        </div>
+                    </div>
+                </div>
+                <div className="symbol-input-container">
+                    <button onClick={handlePredictClick} className="predict-button">Predict</button>
+                </div>
             </div>
-            { predictions ?
+            { predictions && !isLoading ?
             <div className="plot-container">
                 <DataPlot predictedData={predictions} selectedSymbol={selectedSymbol} /> 
             </div>
@@ -74,16 +99,13 @@ export default function Analytics() {
             <Loading style={{marginTop: '100px', marginBottom: '100px'}} />
             }
             
-            <div className='analytics-title'> Analytics </div>
+            <div className='analytics-title'> Disclaimer </div>
             <div className='analytics-text'>
                 <p>
-                    We are working on our AI model at the moment, but soon you will be able to see stock analytics for every stock
-                    in the S&P 500. You will be able to access the full potential of our TradeMind AI to better your knowledge & allow you
-                    to make more informed decisions!
-                </p>
-                <p>
-                    Stocks are a great way to invest your money, but it can be hard to know which stocks to invest in and when to make that
-                    investment! We are here to help you with that.
+                Please note that this tool is intended for educational purposes only. It is not designed to provide any financial advice, 
+                nor should it be used for real-time trading decisions. The creators of this tool are not certified financial advisors and 
+                will not be held responsible for any decisions or actions taken based on the information provided by this tool. 
+                Always consult with a certified financial advisor before making any investment decisions.
                 </p>
             </div>
         </div>
