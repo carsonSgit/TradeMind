@@ -59,9 +59,11 @@ export default function Analytics() {
             <div className="symbol-selector-container">
                 <div className="for-mobile">
                     <div className="symbol-input-container">
+                        Symbols
                         <StockSymbolSelector symbols={symbols} setSelectedSymbol={setSelectedSymbol}/>
                     </div>
                     <div className="symbol-input-container">
+                        Years
                         <div class="radio-input">
                         <label>
                             <input value="1" name="value-radio" id="value-1" type="radio" onChange={handleYearsChange} />
