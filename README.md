@@ -14,7 +14,7 @@ TradeMind AI is a stock analytics AI designed to assist users in making informed
 
 > Utilize TradeMind AI as a supplementary tool to your existing research and analysis. While it offers valuable insights, always consider multiple sources of information before making trading decisions.
 
-See our [colab notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing)
+See our [colab notebook](https://colab.research.google.com/drive/1iF8vrqAI5z4uwKgJQ-MhEdLHXmqqIr4k)
 
 ## Problem Identification and Scope
 
@@ -53,12 +53,7 @@ This dataset provides historical stock price data for companies listed on the S&
 Through the dataset, we are provided with the following data attributes:
 
 1. Date (Temporal data)
-2. Open (Opening stock price)
-3. High (Highest price reached)
-4. Low (Lowest price reached)
-5. Close (Closing stock price)
-6. Volume (Number of shares traded)
-7. Name (Stock ticker)
+2. Close (Closing stock price)
 
 ## 🚀 Getting Started
 
@@ -68,4 +63,4 @@ To get started with TradeMind AI, follow these steps:
 
 **OR** 
 
-- **Use our Colab Notebook**: Dive into the provided Jupyter [notebook](https://colab.research.google.com/drive/1R_pma4jAjYzCwgSfh5H25cwk4FZaFRIt?usp=sharing) to explore data preprocessing, visualization, and initial modeling. 
+- **Use our Colab Notebook**: Dive into the provided [colab notebook](https://colab.research.google.com/drive/1iF8vrqAI5z4uwKgJQ-MhEdLHXmqqIr4k) to explore data preprocessing, visualization, and initial modeling. 
