@@ -56,7 +56,7 @@ export default function Home() {
                 <div id='OurTeamSection'></div>
                 <div className="home-page-row-container row">
                     <HomePageText text={teamStatement} title="Our Team" side="right"></HomePageText>
-                    <HomePageImage imageUrl="../home/MotivationIconRobot.webp" side="left"></HomePageImage>
+                    <HomePageImage imageUrl="../home/group.webp" side="left"></HomePageImage>
                 </div>
                 <div id='OurProductSection'></div>
                 <div className="home-page-row-container row">
